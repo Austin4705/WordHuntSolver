@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Dev/USACO/Practice/General/ClapSean/main.cpp
+bits/stdc++.h
+C:/Dev/USACO/Practice/General/ClapSean/bits/stdc++.h
+
