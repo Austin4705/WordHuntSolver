@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Dev/USACO/Practice/General/ClapSean/fileReader.cpp" "C:/Dev/USACO/Practice/General/ClapSean/cmake-build-debug/CMakeFiles/ClapSean.dir/fileReader.cpp.obj"
-  "C:/Dev/USACO/Practice/General/ClapSean/main.cpp" "C:/Dev/USACO/Practice/General/ClapSean/cmake-build-debug/CMakeFiles/ClapSean.dir/main.cpp.obj"
-  "C:/Dev/USACO/Practice/General/ClapSean/permutation.cpp" "C:/Dev/USACO/Practice/General/ClapSean/cmake-build-debug/CMakeFiles/ClapSean.dir/permutation.cpp.obj"
+  "C:/Dev/WordHuntSolver/ClapSean/fileReader.cpp" "C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/CMakeFiles/ClapSean.dir/fileReader.cpp.obj"
+  "C:/Dev/WordHuntSolver/ClapSean/main.cpp" "C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/CMakeFiles/ClapSean.dir/main.cpp.obj"
+  "C:/Dev/WordHuntSolver/ClapSean/permutation.cpp" "C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/CMakeFiles/ClapSean.dir/permutation.cpp.obj"
+  "C:/Dev/WordHuntSolver/ClapSean/trie.cpp" "C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/CMakeFiles/ClapSean.dir/trie.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

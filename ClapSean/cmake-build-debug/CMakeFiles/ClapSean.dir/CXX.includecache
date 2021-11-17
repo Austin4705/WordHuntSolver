@@ -6,7 +6,21 @@
 
 #IncludeRegexTransform: 
 
-C:/Dev/USACO/Practice/General/ClapSean/main.cpp
-bits/stdc++.h
-C:/Dev/USACO/Practice/General/ClapSean/bits/stdc++.h
+C:/Dev/WordHuntSolver/ClapSean/trie.cpp
+trie.h
+C:/Dev/WordHuntSolver/ClapSean/trie.h
+string
+-
+vector
+-
+array
+-
+
+C:/Dev/WordHuntSolver/ClapSean/trie.h
+array
+-
+vector
+-
+string
+-
 

@@ -67,10 +67,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Dev\USACO\Practice\General\ClapSean
+CMAKE_SOURCE_DIR = C:\Dev\WordHuntSolver\ClapSean
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Dev\USACO\Practice\General\ClapSean\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dev\USACO\Practice\General\ClapSean\cmake-build-debug\CMakeFiles C:\Dev\USACO\Practice\General\ClapSean\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug\CMakeFiles C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dev\USACO\Practice\General\ClapSean\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -223,6 +223,33 @@ permutation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/permutation.cpp.s
 .PHONY : permutation.cpp.s
 
+trie.obj: trie.cpp.obj
+
+.PHONY : trie.obj
+
+# target to build an object file
+trie.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/trie.cpp.obj
+.PHONY : trie.cpp.obj
+
+trie.i: trie.cpp.i
+
+.PHONY : trie.i
+
+# target to preprocess a source file
+trie.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/trie.cpp.i
+.PHONY : trie.cpp.i
+
+trie.s: trie.cpp.s
+
+.PHONY : trie.s
+
+# target to generate assembly for a file
+trie.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/trie.cpp.s
+.PHONY : trie.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -241,6 +268,9 @@ help:
 	@echo ... permutation.obj
 	@echo ... permutation.i
 	@echo ... permutation.s
+	@echo ... trie.obj
+	@echo ... trie.i
+	@echo ... trie.s
 .PHONY : help
 
 

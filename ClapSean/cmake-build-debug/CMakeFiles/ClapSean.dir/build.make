@@ -62,10 +62,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Dev\USACO\Practice\General\ClapSean
+CMAKE_SOURCE_DIR = C:\Dev\WordHuntSolver\ClapSean
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Dev\USACO\Practice\General\ClapSean\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ClapSean.dir/depend.make
@@ -78,48 +78,62 @@ include CMakeFiles/ClapSean.dir/flags.make
 
 CMakeFiles/ClapSean.dir/main.cpp.obj: CMakeFiles/ClapSean.dir/flags.make
 CMakeFiles/ClapSean.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Dev\USACO\Practice\General\ClapSean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ClapSean.dir/main.cpp.obj"
-	C:\msys64\mingw64\bin\clang++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ClapSean.dir\main.cpp.obj -c C:\Dev\USACO\Practice\General\ClapSean\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ClapSean.dir/main.cpp.obj"
+	C:\msys64\mingw64\bin\clang++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ClapSean.dir\main.cpp.obj -c C:\Dev\WordHuntSolver\ClapSean\main.cpp
 
 CMakeFiles/ClapSean.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClapSean.dir/main.cpp.i"
-	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Dev\USACO\Practice\General\ClapSean\main.cpp > CMakeFiles\ClapSean.dir\main.cpp.i
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Dev\WordHuntSolver\ClapSean\main.cpp > CMakeFiles\ClapSean.dir\main.cpp.i
 
 CMakeFiles/ClapSean.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClapSean.dir/main.cpp.s"
-	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Dev\USACO\Practice\General\ClapSean\main.cpp -o CMakeFiles\ClapSean.dir\main.cpp.s
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Dev\WordHuntSolver\ClapSean\main.cpp -o CMakeFiles\ClapSean.dir\main.cpp.s
 
 CMakeFiles/ClapSean.dir/permutation.cpp.obj: CMakeFiles/ClapSean.dir/flags.make
 CMakeFiles/ClapSean.dir/permutation.cpp.obj: ../permutation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Dev\USACO\Practice\General\ClapSean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ClapSean.dir/permutation.cpp.obj"
-	C:\msys64\mingw64\bin\clang++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ClapSean.dir\permutation.cpp.obj -c C:\Dev\USACO\Practice\General\ClapSean\permutation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ClapSean.dir/permutation.cpp.obj"
+	C:\msys64\mingw64\bin\clang++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ClapSean.dir\permutation.cpp.obj -c C:\Dev\WordHuntSolver\ClapSean\permutation.cpp
 
 CMakeFiles/ClapSean.dir/permutation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClapSean.dir/permutation.cpp.i"
-	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Dev\USACO\Practice\General\ClapSean\permutation.cpp > CMakeFiles\ClapSean.dir\permutation.cpp.i
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Dev\WordHuntSolver\ClapSean\permutation.cpp > CMakeFiles\ClapSean.dir\permutation.cpp.i
 
 CMakeFiles/ClapSean.dir/permutation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClapSean.dir/permutation.cpp.s"
-	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Dev\USACO\Practice\General\ClapSean\permutation.cpp -o CMakeFiles\ClapSean.dir\permutation.cpp.s
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Dev\WordHuntSolver\ClapSean\permutation.cpp -o CMakeFiles\ClapSean.dir\permutation.cpp.s
 
 CMakeFiles/ClapSean.dir/fileReader.cpp.obj: CMakeFiles/ClapSean.dir/flags.make
 CMakeFiles/ClapSean.dir/fileReader.cpp.obj: ../fileReader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Dev\USACO\Practice\General\ClapSean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ClapSean.dir/fileReader.cpp.obj"
-	C:\msys64\mingw64\bin\clang++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ClapSean.dir\fileReader.cpp.obj -c C:\Dev\USACO\Practice\General\ClapSean\fileReader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ClapSean.dir/fileReader.cpp.obj"
+	C:\msys64\mingw64\bin\clang++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ClapSean.dir\fileReader.cpp.obj -c C:\Dev\WordHuntSolver\ClapSean\fileReader.cpp
 
 CMakeFiles/ClapSean.dir/fileReader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClapSean.dir/fileReader.cpp.i"
-	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Dev\USACO\Practice\General\ClapSean\fileReader.cpp > CMakeFiles\ClapSean.dir\fileReader.cpp.i
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Dev\WordHuntSolver\ClapSean\fileReader.cpp > CMakeFiles\ClapSean.dir\fileReader.cpp.i
 
 CMakeFiles/ClapSean.dir/fileReader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClapSean.dir/fileReader.cpp.s"
-	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Dev\USACO\Practice\General\ClapSean\fileReader.cpp -o CMakeFiles\ClapSean.dir\fileReader.cpp.s
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Dev\WordHuntSolver\ClapSean\fileReader.cpp -o CMakeFiles\ClapSean.dir\fileReader.cpp.s
+
+CMakeFiles/ClapSean.dir/trie.cpp.obj: CMakeFiles/ClapSean.dir/flags.make
+CMakeFiles/ClapSean.dir/trie.cpp.obj: ../trie.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ClapSean.dir/trie.cpp.obj"
+	C:\msys64\mingw64\bin\clang++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ClapSean.dir\trie.cpp.obj -c C:\Dev\WordHuntSolver\ClapSean\trie.cpp
+
+CMakeFiles/ClapSean.dir/trie.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClapSean.dir/trie.cpp.i"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Dev\WordHuntSolver\ClapSean\trie.cpp > CMakeFiles\ClapSean.dir\trie.cpp.i
+
+CMakeFiles/ClapSean.dir/trie.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClapSean.dir/trie.cpp.s"
+	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Dev\WordHuntSolver\ClapSean\trie.cpp -o CMakeFiles\ClapSean.dir\trie.cpp.s
 
 # Object files for target ClapSean
 ClapSean_OBJECTS = \
 "CMakeFiles/ClapSean.dir/main.cpp.obj" \
 "CMakeFiles/ClapSean.dir/permutation.cpp.obj" \
-"CMakeFiles/ClapSean.dir/fileReader.cpp.obj"
+"CMakeFiles/ClapSean.dir/fileReader.cpp.obj" \
+"CMakeFiles/ClapSean.dir/trie.cpp.obj"
 
 # External object files for target ClapSean
 ClapSean_EXTERNAL_OBJECTS =
@@ -127,11 +141,12 @@ ClapSean_EXTERNAL_OBJECTS =
 ClapSean.exe: CMakeFiles/ClapSean.dir/main.cpp.obj
 ClapSean.exe: CMakeFiles/ClapSean.dir/permutation.cpp.obj
 ClapSean.exe: CMakeFiles/ClapSean.dir/fileReader.cpp.obj
+ClapSean.exe: CMakeFiles/ClapSean.dir/trie.cpp.obj
 ClapSean.exe: CMakeFiles/ClapSean.dir/build.make
 ClapSean.exe: CMakeFiles/ClapSean.dir/linklibs.rsp
 ClapSean.exe: CMakeFiles/ClapSean.dir/objects1.rsp
 ClapSean.exe: CMakeFiles/ClapSean.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Dev\USACO\Practice\General\ClapSean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ClapSean.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ClapSean.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ClapSean.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -144,6 +159,6 @@ CMakeFiles/ClapSean.dir/clean:
 .PHONY : CMakeFiles/ClapSean.dir/clean
 
 CMakeFiles/ClapSean.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Dev\USACO\Practice\General\ClapSean C:\Dev\USACO\Practice\General\ClapSean C:\Dev\USACO\Practice\General\ClapSean\cmake-build-debug C:\Dev\USACO\Practice\General\ClapSean\cmake-build-debug C:\Dev\USACO\Practice\General\ClapSean\cmake-build-debug\CMakeFiles\ClapSean.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Dev\WordHuntSolver\ClapSean C:\Dev\WordHuntSolver\ClapSean C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug\CMakeFiles\ClapSean.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ClapSean.dir/depend
 
