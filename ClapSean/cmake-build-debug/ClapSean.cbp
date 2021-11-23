@@ -89,6 +89,12 @@
 		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/main.cpp">
 			<Option target="ClapSean"/>
 		</Unit>
+		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/node.cpp">
+			<Option target="ClapSean"/>
+		</Unit>
+		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/node.h">
+			<Option target="ClapSean"/>
+		</Unit>
 		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/permutation.cpp">
 			<Option target="ClapSean"/>
 		</Unit>

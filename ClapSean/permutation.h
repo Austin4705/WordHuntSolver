@@ -7,8 +7,9 @@
 
 
 class permutation {
+    public:
 
-};
+    };
 
 
 #endif //CLAPSEAN_PERMUTATION_H

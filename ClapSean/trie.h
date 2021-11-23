@@ -4,6 +4,7 @@
 #include <array>
 #include <vector>
 #include <string>
+#include <memory>
 using std::string;
 
 #ifndef CLAPSEAN_TRIE_H
@@ -11,19 +12,20 @@ using std::string;
 
 
 //nothing sus here :)
-class trie{
+class trie {
 public:
-    static trie * root;
-    static char * makeTrie(const std::vector<string> & v);
+    static std::shared_ptr<trie> makeTrie(const std::vector<std::string> & v);
 
-    std::array<trie*, 26> * x = new std::array<trie*, 26>;
+    //trie value, word indexed bool, char character stored(unessecary but im lazy), 26 for the other ones
+    std::array<std::shared_ptr<trie>, 26> x = {nullptr};
     char c = ' ';
     bool indexedW = false;
-    trie()= default;
-    explicit trie(char cc){
+    trie() = default;
+    explicit trie(char cc) {
         c = cc;
     }
 
 
+};
 
 #endif //CLAPSEAN_TRIE_H

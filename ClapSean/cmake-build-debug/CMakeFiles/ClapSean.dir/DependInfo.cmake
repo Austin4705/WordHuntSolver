@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Dev/WordHuntSolver/ClapSean/fileReader.cpp" "C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/CMakeFiles/ClapSean.dir/fileReader.cpp.obj"
   "C:/Dev/WordHuntSolver/ClapSean/main.cpp" "C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/CMakeFiles/ClapSean.dir/main.cpp.obj"
+  "C:/Dev/WordHuntSolver/ClapSean/node.cpp" "C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/CMakeFiles/ClapSean.dir/node.cpp.obj"
   "C:/Dev/WordHuntSolver/ClapSean/permutation.cpp" "C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/CMakeFiles/ClapSean.dir/permutation.cpp.obj"
   "C:/Dev/WordHuntSolver/ClapSean/trie.cpp" "C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/CMakeFiles/ClapSean.dir/trie.cpp.obj"
   )

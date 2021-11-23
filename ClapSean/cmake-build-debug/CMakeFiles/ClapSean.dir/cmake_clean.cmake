@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ClapSean.dir/fileReader.cpp.obj"
   "CMakeFiles/ClapSean.dir/main.cpp.obj"
+  "CMakeFiles/ClapSean.dir/node.cpp.obj"
   "CMakeFiles/ClapSean.dir/permutation.cpp.obj"
   "CMakeFiles/ClapSean.dir/trie.cpp.obj"
   "ClapSean.exe"

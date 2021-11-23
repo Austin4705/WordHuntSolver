@@ -196,6 +196,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+node.obj: node.cpp.obj
+
+.PHONY : node.obj
+
+# target to build an object file
+node.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/node.cpp.obj
+.PHONY : node.cpp.obj
+
+node.i: node.cpp.i
+
+.PHONY : node.i
+
+# target to preprocess a source file
+node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/node.cpp.i
+.PHONY : node.cpp.i
+
+node.s: node.cpp.s
+
+.PHONY : node.s
+
+# target to generate assembly for a file
+node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/node.cpp.s
+.PHONY : node.cpp.s
+
 permutation.obj: permutation.cpp.obj
 
 .PHONY : permutation.obj
@@ -265,6 +292,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... node.obj
+	@echo ... node.i
+	@echo ... node.s
 	@echo ... permutation.obj
 	@echo ... permutation.i
 	@echo ... permutation.s

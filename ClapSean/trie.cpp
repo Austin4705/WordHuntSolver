@@ -4,32 +4,36 @@
 
 #include "trie.h"
 #include <string>
-
 #include <vector>
 #include <array>
+#include <memory>
+using std::string;
 
-static char * trie::makeTrie(const std::vector<std::string> & v){
+std::shared_ptr<trie> trie::makeTrie(const std::vector<std::string> & v){
     //make a trie
-    auto * trieBase = new trie(' ');
+    std::shared_ptr<trie> trieBase(new trie(' '));
+    //for every work in vector
     for(auto &x : v){
-        trie * ref = trieBase;
-        //for each letter
+        auto ref = trieBase;//reset referecne for the word
+        //for each letter in each word
         for(int i = 0; i < x.size(); i++){
+            //letter from 0-25
             int charindex = x[i] - 'a';
-            std::array<trie*, 26> * xTemp = ref->x;
+            //find the arr ptr from the current node
+            //std::array<trie*, 26> * xTemp = ref->x;
             //if not a trie then make one
-            if( (*xTemp)[charindex] == nullptr ){
-                trie * trieTemp = new trie(x[i]);
-                (*xTemp)[charindex] = trieTemp;
+            if( (ref->x)[charindex] == nullptr ){
+                std::shared_ptr<trie> trieTemp(new trie(x[i]));
+                (ref->x)[charindex] = trieTemp;
             }
-            //set the letter (could be more efficent with index of arr, idgaf
-            *(*xTemp)[charindex]->c = (x[i]);
+            //set the next pointer for the next letter
+            ref = std::shared_ptr<trie>((ref->x)[charindex]);
             //if end of word
             if(i == x.size()-1){
                 ref->indexedW = true;
             }
-            //set the next pointer for the next letter
-            ref = (*ref->x)[charindex];
         }
     }
+    //return the tree
+    return trieBase;
 }
