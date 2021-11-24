@@ -1,15 +1,12 @@
 //
 // Created by wu_pe on 11/16/2021.
 //
-
 #include "trie.h"
-#include <string>
-#include <vector>
-#include <array>
-#include <memory>
-using std::string;
 
 std::shared_ptr<trie> trie::makeTrie(const std::vector<std::string> & v){
+    std::cout << "Staring Trie Building from Vector\n";
+    auto t1 = std::chrono::high_resolution_clock::now();
+
     //make a trie
     std::shared_ptr<trie> trieBase(new trie(' '));
     //for every work in vector
@@ -34,6 +31,9 @@ std::shared_ptr<trie> trie::makeTrie(const std::vector<std::string> & v){
             }
         }
     }
+    auto t2 = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double, std::milli> diff = t2-t1;
+    std::cout << "Trie Finished Building in: " << diff.count() << " ms\n";
     //return the tree
     return trieBase;
 }

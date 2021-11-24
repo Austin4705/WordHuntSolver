@@ -6,8 +6,10 @@
 #include <string>
 #include <array>
 #include <memory>
-#include "math.h"
-#include "assert.h"
+#include <cmath>
+#include <cassert>
+#include <iostream>
+#include <chrono>
 using std::string;
 
 
@@ -34,7 +36,7 @@ public:
     //helper functions
 private:
     static std::array<node *, 16> generateGraph(const string& s);
-    static void permutations(const std::shared_ptr<std::vector<string>>& returnVal, const string& prev, node* thisN, int n, std::array<bool, 16> graph);
+    static void permutations(const std::shared_ptr<std::vector<string>>& returnVal, const string& prev, node* thisN, std::array<bool, 16> graph);
 };
 
 

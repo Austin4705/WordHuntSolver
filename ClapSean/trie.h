@@ -5,6 +5,8 @@
 #include <vector>
 #include <string>
 #include <memory>
+#include <chrono>
+#include <iostream>
 using std::string;
 
 #ifndef CLAPSEAN_TRIE_H

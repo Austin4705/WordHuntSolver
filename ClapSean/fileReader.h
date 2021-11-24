@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include <memory>
+#include <iostream>
 using std::string;
 
 #ifndef CLAPSEAN_FILEREADER_H

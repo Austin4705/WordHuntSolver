@@ -6,39 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Dev/WordHuntSolver/ClapSean/fileReader.h
-string
--
-vector
--
-memory
--
-
-C:/Dev/WordHuntSolver/ClapSean/main.cpp
-array
--
-vector
--
-string
--
-memory
--
-iostream
--
-cassert
--
-trie.h
-C:/Dev/WordHuntSolver/ClapSean/trie.h
-fileReader.h
-C:/Dev/WordHuntSolver/ClapSean/fileReader.h
-node.h
-C:/Dev/WordHuntSolver/ClapSean/node.h
-
 C:/Dev/WordHuntSolver/ClapSean/node.cpp
 node.h
 C:/Dev/WordHuntSolver/ClapSean/node.h
-memory
--
 
 C:/Dev/WordHuntSolver/ClapSean/node.h
 vector
@@ -49,14 +19,12 @@ array
 -
 memory
 -
-
-C:/Dev/WordHuntSolver/ClapSean/trie.h
-array
+cmath
 -
-vector
+cassert
 -
-string
+iostream
 -
-memory
+chrono
 -
 

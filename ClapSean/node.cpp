@@ -13,7 +13,7 @@ std::array<node *, 16> node::generateGraph(const string& s){
     int nodeNum = 1;
     //declare and init all the nodes
     for(int i = 0; i < 4; i++){
-        for(int j = 1; j < 4; j++){
+        for(int j = 0; j < 4; j++){
             auto workingNode = new node(s[nodeNum-1], nodeNum);
             returnVal[nodeNum-1] = workingNode;
             arrN[i][j] = workingNode;
@@ -22,7 +22,7 @@ std::array<node *, 16> node::generateGraph(const string& s){
     }
     //fill in the interconnected array of nodes
     //indicie adj going around from 1-8, https://cdn.discordapp.com/attachments/192058549776416768/913136317100068914/unknown.png
-    std::array<std::pair<int, int>, 8> indiciesAdj = {{ {1, 1}, {1, 0}, {1, -1}, {0, -1}, {-1, -1}, {-1, 0}, {-1, 1}, {0, 1} }};
+    const std::array<std::pair<int, int>, 8> indiciesAdj = {{ {1, -1}, {1, 0}, {1, 1}, {0, 1}, {-1, 1}, {-1, 0}, {-1, -1}, {0, -1} }};
     for(int i = 0; i < 4; i++){
         for(int j = 0; j < 4; j++){
             auto workingNode = arrN[i][j];
@@ -39,19 +39,16 @@ std::array<node *, 16> node::generateGraph(const string& s){
 }
 
 //recursively calculate permutations, recrusive function, super inneficent and bad implementation, should be fine tho
-void node::permutations(const std::shared_ptr<std::vector<string>>& returnVal, const string& prev, node* thisN, int n, std::array<bool, 16> graph){
-    //if at end of size append to array
+void node::permutations(const std::shared_ptr<std::vector<string>>& returnVal, const string& prev, node* thisN, std::array<bool, 16> graph){
     returnVal->push_back(prev);
-    if(n == 1){
-        return;
-    }
     //for each eligible x node
-    for(int i = 0; i < thisN->neighborNodes.size(); i++){
-        if(thisN->neighborNodes[i] != nullptr){
-            if(!graph[thisN->neighborNodes[i]->id]){
-                graph[thisN->neighborNodes[i]->id] = true;
+    auto neigNodes = thisN->neighborNodes;
+    for(int i = 0; i < neigNodes.size(); i++){
+        if(neigNodes[i] != nullptr){
+            if(!graph[neigNodes[i]->id]){
+                graph[neigNodes[i]->id] = true;
                 //ok did change it to be much better, still recursive and not dynamic programming but idc
-                permutations(returnVal, prev + thisN->letter, thisN->neighborNodes[i], n - 1, graph);
+                permutations(returnVal, prev + thisN->letter, neigNodes[i], graph);
             }
         }
     }
@@ -59,14 +56,26 @@ void node::permutations(const std::shared_ptr<std::vector<string>>& returnVal, c
 
 //get all the permutations and add it to the list
 std::shared_ptr<std::vector<string>> node::totalPermutations(const string& c){
+    std::cout << "Generating Graph\n";
+    auto t11 = std::chrono::high_resolution_clock::now();
     //generate initial graph
     std::array<node*, 16> graph = generateGraph(c);
+
+    auto t21 = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double, std::milli> diff1 = t21-t11;
+    std::cout << "Graph Finished Building in: " << diff1.count() << " ms\n";
+    std::cout << "Generating Permutations\n";
+    auto t12 = std::chrono::high_resolution_clock::now();
 
     auto returnVal = std::make_shared<std::vector<string>>();
     //for each starting node
     for(int i = 0; i < 16; i++)
         //find all the permutations with that starting node nad length
-        permutations(returnVal, c, graph[i], 17, std::array<bool, 16>());
+        permutations(returnVal, c, graph[i], std::array<bool, 16>()={false});
+
+    auto t22 = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double, std::milli> diff2 = t22-t12;
+    std::cout << "All Permutations Finished Building in: " << diff2.count() << " ms\n";
 
     return returnVal;
 }

@@ -17,11 +17,14 @@ std::unique_ptr<std::vector<string>> fileReader::readFile(const string& filename
     std::cout << "Init FileStream ... ";
     std::ifstream tin(p);
     std::cout << "Filestream Made, initializing copying data\n";
+    auto t1 = std::chrono::high_resolution_clock::now();
     std::unique_ptr<std::vector<string>> v(new std::vector<string>());
     string s;
     while(std::getline(tin, s)){
         v->push_back(s);
     }
-    std::cout << "Read Words: " << v->size();
+    auto t2 = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double, std::milli> diff = t2-t1;
+    std::cout << "Read Words: " << v->size() << " in " << diff.count() << " ms.\n";
     return v;
 }

@@ -15,19 +15,25 @@ int main() {
     //importing words
     string filename = R"(words.txt)";
     auto v = fileReader::readFile(filename);
-    std::cout << "\nData intake complete. Generating Trie Structure\n";
+
+    std::cout << "Data intake complete. Generating Trie Structure\n";
 
     //convert array into trie
     auto trieTree = trie::makeTrie(*v);
 
     //intake letters from uer input
-    string userI; std::cin >> userI;
+    std::cout << "Please input string: \n----------------\n";
+    string userI = "giojejfcmeflmgkl";
+    //string userI; std::cin >> userI;
     assert(userI.length() == 16);
+    std::cout << "User input complete, generating all possible permutations of user input in game\n";
 
     //generate all algbraic values of a graph structure
     //generate permutations and input into graph
-    //auto p = node::totalPermutations(userI);
-
+    auto x = node::totalPermutations(userI);
+    for(const auto& y : *x){
+        std::cout << y << "\n";
+    }
 //    auto * p = new std::vector<string>;
 //    p->push_back(userI);
 
