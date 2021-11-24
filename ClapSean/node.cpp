@@ -17,52 +17,45 @@ std::array<node, 16> node::generateGraph(const string& s){
     return x;
 }
 
-//recursively calculate permutations, recrusive function
-static std::unique_ptr<std::vector<string>> node::permutations(const string& prev, node* thisN, int n, std::array<node, 16> graph){
-    auto r = std::make_unique<std::vector<string>>();
-
+//recursively calculate permutations, recrusive function, super inneficent and bad implementation, should be fine tho
+void node::permutations(const std::shared_ptr<std::vector<string>>& returnVal, const string& prev, node* thisN, int n, std::array<node, 16> graph){
     if(n == 1){
-        r->push_back(prev+thisN->letter);
-        return (r);
+        returnVal->push_back(prev+thisN->letter);
+        return;
     }
-
-
     //for each eligible x node
     for(int i = 0; i < thisN->neighborNodes.size(); i++){
         if(thisN->neighborNodes[i] != nullptr){
             if(!thisN->neighborNodes[i]->isTraveled){
                 thisN->neighborNodes[i]->isTraveled = true;
-                auto nodeReturnVal = permutations(prev + thisN->letter, thisN->neighborNodes[i], n - 1, graph);
+                //I could do some like weid liked list implementaion that concatenates in o(1) but I am very lazy....,
+                // could also check with trie if there are any words larger to prevent over indexing, but I am VVVVVV lazy
+                //ok did change it to be much better, still recursive and not dynamic programming but idc
+                permutations(returnVal, prev + thisN->letter, thisN->neighborNodes[i], n - 1, graph);
             }
         }
     }
-    //vector<string> * s = permutations(c.substr(0, c.size-1));
-
-    return r;
 }
 
 //get all the permutations and add it to the list
-std::unique_ptr<std::vector<string>> node::totalPermutations(const string& c){
+std::shared_ptr<std::vector<string>> node::totalPermutations(const string& c){
     //generate initial graph
     std::array<node, 16> graph = generateGraph(c);
 
-    auto returnVal = std::make_unique<std::vector<string>>();
+    auto returnVal = std::make_shared<std::vector<string>>();
     //for each starting node
     for(int i = 0; i < 16; i++)
         //for each letter length
-        for(int j = 1; j <= 16; j++){
+        for(int n = 1; n <= 16; n++){
             //copy array to a new one
             std::array<node, 16> newGraph;
             std::copy(graph.begin(), graph.end(), newGraph.begin());
 
             //find all the permutations with that starting node nad length
-            std::unique_ptr<std::vector<string>> temp = permutations(c, j, newGraph);
+            permutations(c, j, newGraph);
             //copy values into return array
-            returnVal->insert(
-                    returnVal->end(),
-                    make_move_iterator(temp->begin()),
-                    make_move_iterator(temp->end())
-            );
+            //lol so slow :)))))))
+
         }
     return returnVal;
 }

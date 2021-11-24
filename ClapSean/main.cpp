@@ -26,7 +26,7 @@ int main() {
 
     //generate all algbraic values of a graph structure
     //generate permutations and input into graph
-    auto p = node::totalPermutations(userI);
+    //auto p = node::totalPermutations(userI);
 
 //    auto * p = new std::vector<string>;
 //    p->push_back(userI);

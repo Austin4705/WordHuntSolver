@@ -6,7 +6,7 @@ CMakeFiles/ClapSean.dir/fileReader.cpp.obj: ../fileReader.h
 
 CMakeFiles/ClapSean.dir/main.cpp.obj: ../fileReader.h
 CMakeFiles/ClapSean.dir/main.cpp.obj: ../main.cpp
-CMakeFiles/ClapSean.dir/main.cpp.obj: ../permutation.h
+CMakeFiles/ClapSean.dir/main.cpp.obj: ../node.h
 CMakeFiles/ClapSean.dir/main.cpp.obj: ../trie.h
 
 CMakeFiles/ClapSean.dir/node.cpp.obj: ../node.cpp

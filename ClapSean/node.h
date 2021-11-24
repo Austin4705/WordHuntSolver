@@ -19,9 +19,12 @@ public:
     char letter = ' ';
     std::array<node*, 8> neighborNodes = {nullptr};
 
+
+    static std::shared_ptr<std::vector<string>> totalPermutations(const string& c);
+    //helper functions
+private:
     static std::array<node, 16> generateGraph(const string& s);
-    static std::unique_ptr<std::vector<string>> totalPermutations(const string& c);
-    static std::unique_ptr<std::vector<string>> permutations(const string& prev, node* thisN, int n, std::array<node, 16> graph);
+    static void permutations(const std::shared_ptr<std::vector<string>>& returnVal, const string& prev, node* thisN, int n, std::array<node, 16> graph);
 };
 
 

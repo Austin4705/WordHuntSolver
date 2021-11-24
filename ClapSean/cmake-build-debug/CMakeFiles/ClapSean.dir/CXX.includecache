@@ -31,12 +31,14 @@ trie.h
 C:/Dev/WordHuntSolver/ClapSean/trie.h
 fileReader.h
 C:/Dev/WordHuntSolver/ClapSean/fileReader.h
-permutation.h
-C:/Dev/WordHuntSolver/ClapSean/permutation.h
+node.h
+C:/Dev/WordHuntSolver/ClapSean/node.h
 
 C:/Dev/WordHuntSolver/ClapSean/node.cpp
 node.h
 C:/Dev/WordHuntSolver/ClapSean/node.h
+memory
+-
 
 C:/Dev/WordHuntSolver/ClapSean/node.h
 vector
@@ -45,8 +47,8 @@ string
 -
 array
 -
-
-C:/Dev/WordHuntSolver/ClapSean/permutation.h
+memory
+-
 
 C:/Dev/WordHuntSolver/ClapSean/trie.h
 array
