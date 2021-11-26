@@ -27,7 +27,7 @@ std::array<node *, 16> node::generateGraph(const string& s){
         for(int j = 0; j < 4; j++){
             auto workingNode = arrN[i][j];
             for(int n = 0; n < 8; n++){
-                int i1 = i+indiciesAdj[n].first, j1 = j+indiciesAdj[n].second;
+                int i1 = i+indiciesAdj[n].second, j1 = j+indiciesAdj[n].first;
                 //if in valid range set the node to the right one in the graph
                 if(i1 < 3 && i1 >= 0 && j1 < 3 && j1 >= 0){
                     workingNode->neighborNodes[n] = arrN[i1][j1];
@@ -41,15 +41,23 @@ std::array<node *, 16> node::generateGraph(const string& s){
 //recursively calculate permutations, recrusive function, super inneficent and bad implementation, should be fine tho
 void node::permutations(const std::shared_ptr<std::vector<string>>& returnVal, const string& prev, node* thisN, std::array<bool, 16> graph, std::shared_ptr<trie> t){
     returnVal->push_back(prev);
+
+    graph[thisN->id-1] = true;//mark visited
+    //save computation
+    //if seq is in trie only then continue
+    bool inTrieB = inTrie(t, prev);
+    if(!inTrieB)
+        return;
+
     //for each eligible x node
     auto neigNodes = thisN->neighborNodes;
     for(int i = 0; i < neigNodes.size(); i++){
-        if(neigNodes[i] != nullptr){
-            if(!graph[neigNodes[i]->id]){
-                graph[neigNodes[i]->id] = true;
+        if(neigNodes[i] != nullptr){//if a node
+            if(!graph[neigNodes[i]->id-1]){//if now visited
                 //ok did change it to be much better, still recursive and not dynamic programming but idc
-                if(inTrie(t, prev + thisN->letter))
-                    permutations(returnVal, prev + thisN->letter, neigNodes[i], graph, t);
+
+                    //call next version, iterate until all neighboring nodes have been traveled or no possible combinations
+                    permutations(returnVal, prev + neigNodes[i]->letter, neigNodes[i], graph, t);
             }
         }
     }
@@ -70,11 +78,10 @@ std::shared_ptr<std::vector<string>> node::totalPermutations(const string& c, co
 
     auto returnVal = std::make_shared<std::vector<string>>();
     //for each starting node
-    for(int i = 0; i < 16; i++)
+    for(int i = 0; i < 16; i++) {
         //find all the permutations with that starting node nad length
-        permutations(returnVal, string(1, c[i]), graph[i],
-                     std::array<bool, 16>() = {false}, t);
-
+        permutations(returnVal, string(1, c[i]), graph[i], std::array<bool, 16>() = {false}, t);
+    }
     auto t22 = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::milli> diff2 = t22-t12;
     std::cout << "All Permutations Finished Building in: " << diff2.count() << " ms\n";
@@ -100,29 +107,3 @@ bool node::inTrie(std::shared_ptr<trie> t, const string& s){
 //convert algebraic values to actual values (makes time complexity  o(n)
 
 
-
-//    //search through all the words
-//    auto * ok = new std::vector<string>;
-//    auto ref = trieTree;
-//    for(auto &x : *p){
-//        for(int i = 0; i < x.size(); i++){
-//            int charindex = x[i] - 'a';
-//            //if at the end and good, push back
-//            if(i == x.size()-1 && ref->indexedW){
-//                ok->push_back(x);
-//            }
-//            //if null then the tree ends and break otherwise set the next pointer
-//            if((*ref->x)[charindex] == nullptr){
-//                break;
-//            }
-//            else{
-//                ref = (*ref->x)[charindex];
-//            }
-//
-//        }
-//    }
-//
-//    std::cout << "\n";
-//    for(auto &x : *ok){
-//        std::cout << x << "\n";
-//    }

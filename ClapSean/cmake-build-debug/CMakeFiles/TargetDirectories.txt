@@ -1,3 +1,3 @@
-C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/CMakeFiles/ClapSean.dir
-C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/CMakeFiles/ClapSean.dir
+X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/CMakeFiles/edit_cache.dir
+X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/CMakeFiles/rebuild_cache.dir

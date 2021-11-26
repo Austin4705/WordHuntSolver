@@ -26,7 +26,7 @@ std::shared_ptr<trie> trie::makeTrie(const std::vector<std::string> & v){
             //set the next pointer for the next letter
             ref = std::shared_ptr<trie>((ref->x)[charindex]);
             //if end of word
-            if(i == x.size()-1){
+            if(i == x.size()-2){
                 ref->indexedW = true;
             }
         }

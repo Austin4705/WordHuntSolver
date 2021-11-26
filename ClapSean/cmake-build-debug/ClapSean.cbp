@@ -8,106 +8,106 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug"/>
+				<Option working_dir="X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="F:/Msys2/mingw64/bin/mingw32-make.exe -f &quot;X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="F:/Msys2/mingw64/bin/mingw32-make.exe -f &quot;X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/Msys2/mingw64/bin/mingw32-make.exe -f &quot;X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/Msys2/mingw64/bin/mingw32-make.exe -f &quot;X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ClapSean">
-				<Option output="C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/ClapSean.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug"/>
+				<Option output="X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/ClapSean.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="clang"/>
 				<Compiler>
-					<Add directory="C:/msys64/mingw64\include\c++\10.2.0"/>
-					<Add directory="C:/msys64/mingw64\include\c++\10.2.0\x86_64-w64-mingw32"/>
-					<Add directory="C:/msys64/mingw64\include\c++\10.2.0\backward"/>
-					<Add directory="C:\msys64\mingw64\lib\clang\11.0.0\include"/>
-					<Add directory="C:/msys64/mingw64\x86_64-w64-mingw32\include"/>
-					<Add directory="C:/msys64/mingw64\include"/>
+					<Add directory="F:/Msys2/mingw64\include\c++\10.2.0"/>
+					<Add directory="F:/Msys2/mingw64\include\c++\10.2.0\x86_64-w64-mingw32"/>
+					<Add directory="F:/Msys2/mingw64\include\c++\10.2.0\backward"/>
+					<Add directory="F:\Msys2\mingw64\lib\clang\11.0.0\include"/>
+					<Add directory="F:/Msys2/mingw64\x86_64-w64-mingw32\include"/>
+					<Add directory="F:/Msys2/mingw64\include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 ClapSean"/>
-					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="F:/Msys2/mingw64/bin/mingw32-make.exe -f &quot;X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 ClapSean"/>
+					<CompileFile command="F:/Msys2/mingw64/bin/mingw32-make.exe -f &quot;X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/Msys2/mingw64/bin/mingw32-make.exe -f &quot;X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/Msys2/mingw64/bin/mingw32-make.exe -f &quot;X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ClapSean/fast">
-				<Option output="C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/ClapSean.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug"/>
+				<Option output="X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/ClapSean.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="clang"/>
 				<Compiler>
-					<Add directory="C:/msys64/mingw64\include\c++\10.2.0"/>
-					<Add directory="C:/msys64/mingw64\include\c++\10.2.0\x86_64-w64-mingw32"/>
-					<Add directory="C:/msys64/mingw64\include\c++\10.2.0\backward"/>
-					<Add directory="C:\msys64\mingw64\lib\clang\11.0.0\include"/>
-					<Add directory="C:/msys64/mingw64\x86_64-w64-mingw32\include"/>
-					<Add directory="C:/msys64/mingw64\include"/>
+					<Add directory="F:/Msys2/mingw64\include\c++\10.2.0"/>
+					<Add directory="F:/Msys2/mingw64\include\c++\10.2.0\x86_64-w64-mingw32"/>
+					<Add directory="F:/Msys2/mingw64\include\c++\10.2.0\backward"/>
+					<Add directory="F:\Msys2\mingw64\lib\clang\11.0.0\include"/>
+					<Add directory="F:/Msys2/mingw64\x86_64-w64-mingw32\include"/>
+					<Add directory="F:/Msys2/mingw64\include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 ClapSean/fast"/>
-					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="F:/Msys2/mingw64/bin/mingw32-make.exe -f &quot;X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 ClapSean/fast"/>
+					<CompileFile command="F:/Msys2/mingw64/bin/mingw32-make.exe -f &quot;X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/Msys2/mingw64/bin/mingw32-make.exe -f &quot;X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/Msys2/mingw64/bin/mingw32-make.exe -f &quot;X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug"/>
+				<Option working_dir="X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="F:/Msys2/mingw64/bin/mingw32-make.exe -f &quot;X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="F:/Msys2/mingw64/bin/mingw32-make.exe -f &quot;X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/Msys2/mingw64/bin/mingw32-make.exe -f &quot;X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/Msys2/mingw64/bin/mingw32-make.exe -f &quot;X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug"/>
+				<Option working_dir="X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="F:/Msys2/mingw64/bin/mingw32-make.exe -f &quot;X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="F:/Msys2/mingw64/bin/mingw32-make.exe -f &quot;X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/Msys2/mingw64/bin/mingw32-make.exe -f &quot;X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/Msys2/mingw64/bin/mingw32-make.exe -f &quot;X:/Repositorys/WordHuntSolver/ClapSean/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/fileReader.cpp">
+		<Unit filename="X:/Repositorys/WordHuntSolver/ClapSean/fileReader.cpp">
 			<Option target="ClapSean"/>
 		</Unit>
-		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/fileReader.h">
+		<Unit filename="X:/Repositorys/WordHuntSolver/ClapSean/fileReader.h">
 			<Option target="ClapSean"/>
 		</Unit>
-		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/main.cpp">
+		<Unit filename="X:/Repositorys/WordHuntSolver/ClapSean/main.cpp">
 			<Option target="ClapSean"/>
 		</Unit>
-		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/node.cpp">
+		<Unit filename="X:/Repositorys/WordHuntSolver/ClapSean/node.cpp">
 			<Option target="ClapSean"/>
 		</Unit>
-		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/node.h">
+		<Unit filename="X:/Repositorys/WordHuntSolver/ClapSean/node.h">
 			<Option target="ClapSean"/>
 		</Unit>
-		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/permutation.cpp">
+		<Unit filename="X:/Repositorys/WordHuntSolver/ClapSean/permutation.cpp">
 			<Option target="ClapSean"/>
 		</Unit>
-		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/permutation.h">
+		<Unit filename="X:/Repositorys/WordHuntSolver/ClapSean/permutation.h">
 			<Option target="ClapSean"/>
 		</Unit>
-		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/trie.cpp">
+		<Unit filename="X:/Repositorys/WordHuntSolver/ClapSean/trie.cpp">
 			<Option target="ClapSean"/>
 		</Unit>
-		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/trie.h">
+		<Unit filename="X:/Repositorys/WordHuntSolver/ClapSean/trie.h">
 			<Option target="ClapSean"/>
 		</Unit>
-		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/CMakeLists.txt">
+		<Unit filename="X:/Repositorys/WordHuntSolver/ClapSean/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

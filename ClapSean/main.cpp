@@ -8,18 +8,17 @@
 #include "trie.h"
 #include "fileReader.h"
 #include "node.h"
+#include "permutation.h"
 
 using std::string;
 
 
 int main() {
-    string q = "oojmeffoie";
-    std::cout << q.size() << "\n";
-
-
-
+//    string q = "oojmeffoie";
+//    std::cout << q.size() << "\n";
+//
     //importing words
-    string filename = R"(words.txt)";
+    string filename = R"(lotawords.txt)";
     auto v = fileReader::readFile(filename);
 
     std::cout << "Data intake complete. Generating Trie Structure\n";
@@ -29,7 +28,7 @@ int main() {
 
     //intake letters from uer input
     std::cout << "Please input string: \n----------------\n";
-    string userI = "giojejfcmeflmgkl";
+    string userI = "uplsdedaealniiww";
     //string userI; std::cin >> userI;
     assert(userI.length() == 16);
     std::cout << "User input complete, generating all possible permutations of user input in game\n";
@@ -37,17 +36,19 @@ int main() {
     //generate all algbraic values of a graph structure
     //generate permutations and input into graph
     auto x = node::totalPermutations(userI, trieTree);
-    //std::sort(x->begin(),x->end(), [](string s1, string s2){return s1.size() < s2.size();});
-    for(const auto& y : *x){
-        //std::cout << y << "\n";
+    auto xx = permutation::search(x, trieTree);
+    std::sort(xx->begin(),xx->end(),
+                [](string& s1, string& s2){
+                    if(s1.size() == s2.size())
+                        return s1 > s2;
+                    return (s1.size() < s2.size() );
+                }
+            );
+    //output this monstrosity 😩 what have I created 😩😩😩😩😩😩😩
+    fileReader::writeFile(xx, "newFileOutputWowSoCool-1.0.txt");
+    for(const auto& y : *xx){
+        std::cout << y << "\n";
     }
-
-
-
-//    auto * p = new std::vector<string>;
-//    p->push_back(userI);
-
-
 
     return 0;
 }
