@@ -39,7 +39,7 @@ std::array<node *, 16> node::generateGraph(const string& s){
 }
 
 //recursively calculate permutations, recrusive function, super inneficent and bad implementation, should be fine tho
-void node::permutations(const std::shared_ptr<std::vector<string>>& returnVal, const string& prev, node* thisN, std::array<bool, 16> graph){
+void node::permutations(const std::shared_ptr<std::vector<string>>& returnVal, const string& prev, node* thisN, std::array<bool, 16> graph, std::shared_ptr<trie> t){
     returnVal->push_back(prev);
     //for each eligible x node
     auto neigNodes = thisN->neighborNodes;
@@ -48,14 +48,15 @@ void node::permutations(const std::shared_ptr<std::vector<string>>& returnVal, c
             if(!graph[neigNodes[i]->id]){
                 graph[neigNodes[i]->id] = true;
                 //ok did change it to be much better, still recursive and not dynamic programming but idc
-                permutations(returnVal, prev + thisN->letter, neigNodes[i], graph);
+                if(inTrie(t, prev + thisN->letter))
+                    permutations(returnVal, prev + thisN->letter, neigNodes[i], graph, t);
             }
         }
     }
 }
 
 //get all the permutations and add it to the list
-std::shared_ptr<std::vector<string>> node::totalPermutations(const string& c){
+std::shared_ptr<std::vector<string>> node::totalPermutations(const string& c, const std::shared_ptr<trie>& t){
     std::cout << "Generating Graph\n";
     auto t11 = std::chrono::high_resolution_clock::now();
     //generate initial graph
@@ -71,7 +72,8 @@ std::shared_ptr<std::vector<string>> node::totalPermutations(const string& c){
     //for each starting node
     for(int i = 0; i < 16; i++)
         //find all the permutations with that starting node nad length
-        permutations(returnVal, c, graph[i], std::array<bool, 16>()={false});
+        permutations(returnVal, string(1, c[i]), graph[i],
+                     std::array<bool, 16>() = {false}, t);
 
     auto t22 = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::milli> diff2 = t22-t12;
@@ -80,7 +82,19 @@ std::shared_ptr<std::vector<string>> node::totalPermutations(const string& c){
     return returnVal;
 }
 
-
+bool node::inTrie(std::shared_ptr<trie> t, const string& s){
+    auto rc = t;
+    for(int i = 0; i < s.size(); i++){
+        int sval = s[i] - 'a';
+        if(rc->x[sval] != nullptr){
+            rc = rc->x[sval];
+        }
+        else{
+            return false;
+        }
+    }
+    return true;
+}
 
 
 //convert algebraic values to actual values (makes time complexity  o(n)

@@ -11,6 +11,7 @@ CMakeFiles/ClapSean.dir/main.cpp.obj: ../trie.h
 
 CMakeFiles/ClapSean.dir/node.cpp.obj: ../node.cpp
 CMakeFiles/ClapSean.dir/node.cpp.obj: ../node.h
+CMakeFiles/ClapSean.dir/node.cpp.obj: ../trie.h
 
 CMakeFiles/ClapSean.dir/permutation.cpp.obj: ../permutation.cpp
 CMakeFiles/ClapSean.dir/permutation.cpp.obj: ../permutation.h

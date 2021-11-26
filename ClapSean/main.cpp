@@ -4,6 +4,7 @@
 #include <memory>
 #include <iostream>
 #include <cassert>
+#include <algorithm>
 #include "trie.h"
 #include "fileReader.h"
 #include "node.h"
@@ -12,6 +13,11 @@ using std::string;
 
 
 int main() {
+    string q = "oojmeffoie";
+    std::cout << q.size() << "\n";
+
+
+
     //importing words
     string filename = R"(words.txt)";
     auto v = fileReader::readFile(filename);
@@ -30,10 +36,14 @@ int main() {
 
     //generate all algbraic values of a graph structure
     //generate permutations and input into graph
-    auto x = node::totalPermutations(userI);
+    auto x = node::totalPermutations(userI, trieTree);
+    //std::sort(x->begin(),x->end(), [](string s1, string s2){return s1.size() < s2.size();});
     for(const auto& y : *x){
-        std::cout << y << "\n";
+        //std::cout << y << "\n";
     }
+
+
+
 //    auto * p = new std::vector<string>;
 //    p->push_back(userI);
 

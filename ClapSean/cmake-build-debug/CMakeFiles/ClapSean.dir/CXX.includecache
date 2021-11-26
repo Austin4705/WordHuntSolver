@@ -6,7 +6,35 @@
 
 #IncludeRegexTransform: 
 
-C:/Dev/WordHuntSolver/ClapSean/node.cpp
+C:/Dev/WordHuntSolver/ClapSean/fileReader.h
+string
+-
+vector
+-
+memory
+-
+iostream
+-
+
+C:/Dev/WordHuntSolver/ClapSean/main.cpp
+array
+-
+vector
+-
+string
+-
+memory
+-
+iostream
+-
+cassert
+-
+algorithm
+-
+trie.h
+C:/Dev/WordHuntSolver/ClapSean/trie.h
+fileReader.h
+C:/Dev/WordHuntSolver/ClapSean/fileReader.h
 node.h
 C:/Dev/WordHuntSolver/ClapSean/node.h
 
@@ -26,5 +54,21 @@ cassert
 iostream
 -
 chrono
+-
+trie.h
+C:/Dev/WordHuntSolver/ClapSean/trie.h
+
+C:/Dev/WordHuntSolver/ClapSean/trie.h
+array
+-
+vector
+-
+string
+-
+memory
+-
+chrono
+-
+iostream
 -
 

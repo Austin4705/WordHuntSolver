@@ -10,6 +10,7 @@
 #include <cassert>
 #include <iostream>
 #include <chrono>
+#include "trie.h"
 using std::string;
 
 
@@ -32,11 +33,13 @@ public:
     int id = -1;
 
 
-    static std::shared_ptr<std::vector<string>> totalPermutations(const string& c);
+    static std::shared_ptr<std::vector<string>> totalPermutations(const string& c, const std::shared_ptr<trie>& t);
+    static bool inTrie(std::shared_ptr<trie> t, const string& s);
     //helper functions
 private:
+
     static std::array<node *, 16> generateGraph(const string& s);
-    static void permutations(const std::shared_ptr<std::vector<string>>& returnVal, const string& prev, node* thisN, std::array<bool, 16> graph);
+    static void permutations(const std::shared_ptr<std::vector<string>>& returnVal, const string& prev, node* thisN, std::array<bool, 16> graph, std::shared_ptr<trie> t);
 };
 
 
