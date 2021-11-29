@@ -1,4 +1,4 @@
-set(CMAKE_C_COMPILER "F:/Msys2/mingw64/bin/clang.exe")
+set(CMAKE_C_COMPILER "C:/msys64/mingw64/bin/clang.exe")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "Clang")
 set(CMAKE_C_COMPILER_VERSION "11.0.0")
@@ -17,11 +17,11 @@ set(CMAKE_C_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "F:/Msys2/mingw64/bin/ar.exe")
-set(CMAKE_C_COMPILER_AR "F:/Msys2/mingw64/bin/llvm-ar.exe")
-set(CMAKE_RANLIB "F:/Msys2/mingw64/bin/ranlib.exe")
-set(CMAKE_C_COMPILER_RANLIB "F:/Msys2/mingw64/bin/llvm-ranlib.exe")
-set(CMAKE_LINKER "F:/Msys2/mingw64/bin/ld.exe")
+set(CMAKE_AR "C:/msys64/mingw64/bin/ar.exe")
+set(CMAKE_C_COMPILER_AR "C:/msys64/mingw64/bin/llvm-ar.exe")
+set(CMAKE_RANLIB "C:/msys64/mingw64/bin/ranlib.exe")
+set(CMAKE_C_COMPILER_RANLIB "C:/msys64/mingw64/bin/llvm-ranlib.exe")
+set(CMAKE_LINKER "C:/msys64/mingw64/bin/ld.exe")
 set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCC )
 set(CMAKE_C_COMPILER_LOADED 1)
@@ -70,7 +70,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "F:/Msys2/mingw64/lib/clang/11.0.0/include;F:/Msys2/mingw64/x86_64-w64-mingw32/include;F:/Msys2/mingw64/include")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "C:/msys64/mingw64/lib/clang/11.0.0/include;C:/msys64/mingw64/x86_64-w64-mingw32/include;C:/msys64/mingw64/include")
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "mingw32;gcc;moldname;mingwex;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex;kernel32")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "F:/Msys2/mingw64/lib/gcc/x86_64-w64-mingw32/10.2.0;F:/Msys2/mingw64/x86_64-w64-mingw32/lib;F:/Msys2/mingw64/lib;F:/Msys2/mingw64/x86_64-w64-mingw32/sys-root/mingw/lib;F:/Msys2/mingw64/lib/clang/11.0.0/lib/windows")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.2.0;C:/msys64/mingw64/x86_64-w64-mingw32/lib;C:/msys64/mingw64/lib;C:/msys64/mingw64/x86_64-w64-mingw32/sys-root/mingw/lib;C:/msys64/mingw64/lib/clang/11.0.0/lib/windows")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
