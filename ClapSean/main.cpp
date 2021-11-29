@@ -50,5 +50,8 @@ int main() {
         std::cout << y << "\n";
     }
 
+    //the chance of this abomination actually returnning 0 is like nothing
+    //😃😃😃😃😃😃😃
+    //😊😊😊😊😊😊😊
     return 0;
 }
