@@ -15,6 +15,7 @@
 using std::string;
 #include "fileReader.h"
 
+//template <typename name>
 std::unique_ptr<std::vector<string>> fileReader::readFile(const string& filename) {
     std::filesystem::path p(std::filesystem::current_path()); p = p / ".." / filename;
     std::cout << "Init FileStream ... ";

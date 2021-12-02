@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-X:/Repositorys/WordHuntSolver/ClapSean/fileReader.h
+C:/Dev/WordHuntSolver/ClapSean/fileReader.h
 string
 -
 vector
@@ -30,7 +30,7 @@ stdio.h
 utility
 -
 
-X:/Repositorys/WordHuntSolver/ClapSean/main.cpp
+C:/Dev/WordHuntSolver/ClapSean/main.cpp
 array
 -
 vector
@@ -46,15 +46,15 @@ cassert
 algorithm
 -
 trie.h
-X:/Repositorys/WordHuntSolver/ClapSean/trie.h
+C:/Dev/WordHuntSolver/ClapSean/trie.h
 fileReader.h
-X:/Repositorys/WordHuntSolver/ClapSean/fileReader.h
+C:/Dev/WordHuntSolver/ClapSean/fileReader.h
 node.h
-X:/Repositorys/WordHuntSolver/ClapSean/node.h
+C:/Dev/WordHuntSolver/ClapSean/node.h
 permutation.h
-X:/Repositorys/WordHuntSolver/ClapSean/permutation.h
+C:/Dev/WordHuntSolver/ClapSean/permutation.h
 
-X:/Repositorys/WordHuntSolver/ClapSean/node.h
+C:/Dev/WordHuntSolver/ClapSean/node.h
 vector
 -
 string
@@ -72,13 +72,9 @@ iostream
 chrono
 -
 trie.h
-X:/Repositorys/WordHuntSolver/ClapSean/trie.h
+C:/Dev/WordHuntSolver/ClapSean/trie.h
 
-X:/Repositorys/WordHuntSolver/ClapSean/permutation.cpp
-permutation.h
-X:/Repositorys/WordHuntSolver/ClapSean/permutation.h
-
-X:/Repositorys/WordHuntSolver/ClapSean/permutation.h
+C:/Dev/WordHuntSolver/ClapSean/permutation.h
 vector
 -
 string
@@ -96,9 +92,9 @@ iostream
 chrono
 -
 trie.h
-X:/Repositorys/WordHuntSolver/ClapSean/trie.h
+C:/Dev/WordHuntSolver/ClapSean/trie.h
 
-X:/Repositorys/WordHuntSolver/ClapSean/trie.h
+C:/Dev/WordHuntSolver/ClapSean/trie.h
 array
 -
 vector
