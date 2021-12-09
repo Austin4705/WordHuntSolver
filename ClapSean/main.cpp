@@ -10,6 +10,7 @@
 #include "node.h"
 #include "permutation.h"
 
+#include <gtest/gtest.h>
 //lol u thought i would use these thingys
 //#include "bits/stdc++.h"
 //using namespace std;
@@ -18,9 +19,6 @@ using std::string;
 
 //BETA G WHAT ARE YOU DOING
 int main() {
-//    string q = "oojmeffoie";
-//    std::cout << q.size() << "\n";
-//
     //importing words
     string filename = R"(lotawords.txt)";
     auto v = fileReader::readFile(filename);
@@ -44,7 +42,7 @@ int main() {
     std::sort(xx->begin(),xx->end(),
     [](string& s1, string& s2){
             if(s1.size() == s2.size())
-                return s1 > s2;
+                return s1 < s2;
             return ( s1.size() < s2.size() );
         }
     );

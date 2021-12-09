@@ -77,6 +77,7 @@ include CMakeFiles/ClapSean.dir/progress.make
 include CMakeFiles/ClapSean.dir/flags.make
 
 CMakeFiles/ClapSean.dir/main.cpp.obj: CMakeFiles/ClapSean.dir/flags.make
+CMakeFiles/ClapSean.dir/main.cpp.obj: CMakeFiles/ClapSean.dir/includes_CXX.rsp
 CMakeFiles/ClapSean.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ClapSean.dir/main.cpp.obj"
 	C:\msys64\mingw64\bin\clang++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ClapSean.dir\main.cpp.obj -c C:\Dev\WordHuntSolver\ClapSean\main.cpp
@@ -90,6 +91,7 @@ CMakeFiles/ClapSean.dir/main.cpp.s: cmake_force
 	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Dev\WordHuntSolver\ClapSean\main.cpp -o CMakeFiles\ClapSean.dir\main.cpp.s
 
 CMakeFiles/ClapSean.dir/permutation.cpp.obj: CMakeFiles/ClapSean.dir/flags.make
+CMakeFiles/ClapSean.dir/permutation.cpp.obj: CMakeFiles/ClapSean.dir/includes_CXX.rsp
 CMakeFiles/ClapSean.dir/permutation.cpp.obj: ../permutation.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ClapSean.dir/permutation.cpp.obj"
 	C:\msys64\mingw64\bin\clang++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ClapSean.dir\permutation.cpp.obj -c C:\Dev\WordHuntSolver\ClapSean\permutation.cpp
@@ -103,6 +105,7 @@ CMakeFiles/ClapSean.dir/permutation.cpp.s: cmake_force
 	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Dev\WordHuntSolver\ClapSean\permutation.cpp -o CMakeFiles\ClapSean.dir\permutation.cpp.s
 
 CMakeFiles/ClapSean.dir/fileReader.cpp.obj: CMakeFiles/ClapSean.dir/flags.make
+CMakeFiles/ClapSean.dir/fileReader.cpp.obj: CMakeFiles/ClapSean.dir/includes_CXX.rsp
 CMakeFiles/ClapSean.dir/fileReader.cpp.obj: ../fileReader.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ClapSean.dir/fileReader.cpp.obj"
 	C:\msys64\mingw64\bin\clang++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ClapSean.dir\fileReader.cpp.obj -c C:\Dev\WordHuntSolver\ClapSean\fileReader.cpp
@@ -116,6 +119,7 @@ CMakeFiles/ClapSean.dir/fileReader.cpp.s: cmake_force
 	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Dev\WordHuntSolver\ClapSean\fileReader.cpp -o CMakeFiles\ClapSean.dir\fileReader.cpp.s
 
 CMakeFiles/ClapSean.dir/trie.cpp.obj: CMakeFiles/ClapSean.dir/flags.make
+CMakeFiles/ClapSean.dir/trie.cpp.obj: CMakeFiles/ClapSean.dir/includes_CXX.rsp
 CMakeFiles/ClapSean.dir/trie.cpp.obj: ../trie.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ClapSean.dir/trie.cpp.obj"
 	C:\msys64\mingw64\bin\clang++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ClapSean.dir\trie.cpp.obj -c C:\Dev\WordHuntSolver\ClapSean\trie.cpp
@@ -129,6 +133,7 @@ CMakeFiles/ClapSean.dir/trie.cpp.s: cmake_force
 	C:\msys64\mingw64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Dev\WordHuntSolver\ClapSean\trie.cpp -o CMakeFiles\ClapSean.dir\trie.cpp.s
 
 CMakeFiles/ClapSean.dir/node.cpp.obj: CMakeFiles/ClapSean.dir/flags.make
+CMakeFiles/ClapSean.dir/node.cpp.obj: CMakeFiles/ClapSean.dir/includes_CXX.rsp
 CMakeFiles/ClapSean.dir/node.cpp.obj: ../node.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ClapSean.dir/node.cpp.obj"
 	C:\msys64\mingw64\bin\clang++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ClapSean.dir\node.cpp.obj -c C:\Dev\WordHuntSolver\ClapSean\node.cpp
@@ -158,6 +163,8 @@ ClapSean.exe: CMakeFiles/ClapSean.dir/fileReader.cpp.obj
 ClapSean.exe: CMakeFiles/ClapSean.dir/trie.cpp.obj
 ClapSean.exe: CMakeFiles/ClapSean.dir/node.cpp.obj
 ClapSean.exe: CMakeFiles/ClapSean.dir/build.make
+ClapSean.exe: lib/libgtest_maind.a
+ClapSean.exe: lib/libgtestd.a
 ClapSean.exe: CMakeFiles/ClapSean.dir/linklibs.rsp
 ClapSean.exe: CMakeFiles/ClapSean.dir/objects1.rsp
 ClapSean.exe: CMakeFiles/ClapSean.dir/link.txt
