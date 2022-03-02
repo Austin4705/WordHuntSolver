@@ -9,20 +9,34 @@
 using std::string;
 
 template <class T, int len>
-constexpr std::vector<std::array<T, len>> * permutations(const std::vector<T> & permutations){
-//    struct permutatoinGroup{
-//        std::vector<stirng> * v;
-//        int n
-//    };
-//
+constexpr std::vector<std::array<T, len>> * permutations(const std::vector<T> & inputPerm){
     typedef std::array<T, len> arrT;
-    auto permArr = new std::vector<arrT>;
-    auto stack = new std::stack<arrT>; //better not stack overflow :)
-    stack->emplace();
-    std::for_each(permutations.begin(), permutations.end(), [&stack](const T a){
-        stack->top()->at(0);
+    struct arrayContainer{
+        arrT a{};
+        int sz = 0;
+        arrayContainer() = default;
+        arrayContainer(arrayContainer prev, T x) : sz(prev.sz+1), a(prev.a) { a.at(sz) = x; }
+        explicit arrayContainer(T x){ a.at(sz) = x; }
+        explicit operator arrT() const { return a; }
+    };
+    auto stack = new std::stack<arrayContainer>; //better not stack overflow :), (stack based recursion)
+    std::for_each(inputPerm.begin(), inputPerm.end(), [&stack](const T& x){
+        stack->template emplace(x);
     });
-
+    //auto permRetArr = new std::vector<arrT>(); //return permutation array
+    auto permRetArr = new std::vector<arrT>;
+    while(!stack->empty()){
+        arrayContainer at = stack->top(); stack->pop();
+        if(at.sz == len-2){//code is repeated, but this saves one exponentaion of stuff on on the stack instead of inputting later
+            for(auto &x : inputPerm)
+                permRetArr->push_back(arrayContainer(at, x).a);
+        }
+        else{
+            for(auto &x : inputPerm)
+                stack->template emplace(arrayContainer(at.a, x));
+        }
+    }
+    return permRetArr;
 }
 
 //given a check function and a list of vectors, return the vectors that work
