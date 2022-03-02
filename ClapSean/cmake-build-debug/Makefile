@@ -240,140 +240,221 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-fileReader.obj: fileReader.cpp.obj
+src/fileReader.obj: src/fileReader.cpp.obj
 
-.PHONY : fileReader.obj
-
-# target to build an object file
-fileReader.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/fileReader.cpp.obj
-.PHONY : fileReader.cpp.obj
-
-fileReader.i: fileReader.cpp.i
-
-.PHONY : fileReader.i
-
-# target to preprocess a source file
-fileReader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/fileReader.cpp.i
-.PHONY : fileReader.cpp.i
-
-fileReader.s: fileReader.cpp.s
-
-.PHONY : fileReader.s
-
-# target to generate assembly for a file
-fileReader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/fileReader.cpp.s
-.PHONY : fileReader.cpp.s
-
-main.obj: main.cpp.obj
-
-.PHONY : main.obj
+.PHONY : src/fileReader.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+src/fileReader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/fileReader.cpp.obj
+.PHONY : src/fileReader.cpp.obj
 
-main.i: main.cpp.i
+src/fileReader.i: src/fileReader.cpp.i
 
-.PHONY : main.i
+.PHONY : src/fileReader.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/fileReader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/fileReader.cpp.i
+.PHONY : src/fileReader.cpp.i
 
-main.s: main.cpp.s
+src/fileReader.s: src/fileReader.cpp.s
 
-.PHONY : main.s
+.PHONY : src/fileReader.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/fileReader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/fileReader.cpp.s
+.PHONY : src/fileReader.cpp.s
 
-node.obj: node.cpp.obj
+src/hashCheck.obj: src/hashCheck.cpp.obj
 
-.PHONY : node.obj
+.PHONY : src/hashCheck.obj
 
 # target to build an object file
-node.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/node.cpp.obj
-.PHONY : node.cpp.obj
+src/hashCheck.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/hashCheck.cpp.obj
+.PHONY : src/hashCheck.cpp.obj
 
-node.i: node.cpp.i
+src/hashCheck.i: src/hashCheck.cpp.i
 
-.PHONY : node.i
+.PHONY : src/hashCheck.i
 
 # target to preprocess a source file
-node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/node.cpp.i
-.PHONY : node.cpp.i
+src/hashCheck.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/hashCheck.cpp.i
+.PHONY : src/hashCheck.cpp.i
 
-node.s: node.cpp.s
+src/hashCheck.s: src/hashCheck.cpp.s
 
-.PHONY : node.s
+.PHONY : src/hashCheck.s
 
 # target to generate assembly for a file
-node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/node.cpp.s
-.PHONY : node.cpp.s
+src/hashCheck.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/hashCheck.cpp.s
+.PHONY : src/hashCheck.cpp.s
 
-permutation.obj: permutation.cpp.obj
+src/main.obj: src/main.cpp.obj
 
-.PHONY : permutation.obj
+.PHONY : src/main.obj
 
 # target to build an object file
-permutation.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/permutation.cpp.obj
-.PHONY : permutation.cpp.obj
+src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
 
-permutation.i: permutation.cpp.i
+src/main.i: src/main.cpp.i
 
-.PHONY : permutation.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-permutation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/permutation.cpp.i
-.PHONY : permutation.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-permutation.s: permutation.cpp.s
+src/main.s: src/main.cpp.s
 
-.PHONY : permutation.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-permutation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/permutation.cpp.s
-.PHONY : permutation.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
-trie.obj: trie.cpp.obj
+src/node.obj: src/node.cpp.obj
 
-.PHONY : trie.obj
+.PHONY : src/node.obj
 
 # target to build an object file
-trie.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/trie.cpp.obj
-.PHONY : trie.cpp.obj
+src/node.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/node.cpp.obj
+.PHONY : src/node.cpp.obj
 
-trie.i: trie.cpp.i
+src/node.i: src/node.cpp.i
 
-.PHONY : trie.i
+.PHONY : src/node.i
 
 # target to preprocess a source file
-trie.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/trie.cpp.i
-.PHONY : trie.cpp.i
+src/node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/node.cpp.i
+.PHONY : src/node.cpp.i
 
-trie.s: trie.cpp.s
+src/node.s: src/node.cpp.s
 
-.PHONY : trie.s
+.PHONY : src/node.s
 
 # target to generate assembly for a file
-trie.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/trie.cpp.s
-.PHONY : trie.cpp.s
+src/node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/node.cpp.s
+.PHONY : src/node.cpp.s
+
+src/permutation.obj: src/permutation.cpp.obj
+
+.PHONY : src/permutation.obj
+
+# target to build an object file
+src/permutation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/permutation.cpp.obj
+.PHONY : src/permutation.cpp.obj
+
+src/permutation.i: src/permutation.cpp.i
+
+.PHONY : src/permutation.i
+
+# target to preprocess a source file
+src/permutation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/permutation.cpp.i
+.PHONY : src/permutation.cpp.i
+
+src/permutation.s: src/permutation.cpp.s
+
+.PHONY : src/permutation.s
+
+# target to generate assembly for a file
+src/permutation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/permutation.cpp.s
+.PHONY : src/permutation.cpp.s
+
+src/profiler.obj: src/profiler.cpp.obj
+
+.PHONY : src/profiler.obj
+
+# target to build an object file
+src/profiler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/profiler.cpp.obj
+.PHONY : src/profiler.cpp.obj
+
+src/profiler.i: src/profiler.cpp.i
+
+.PHONY : src/profiler.i
+
+# target to preprocess a source file
+src/profiler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/profiler.cpp.i
+.PHONY : src/profiler.cpp.i
+
+src/profiler.s: src/profiler.cpp.s
+
+.PHONY : src/profiler.s
+
+# target to generate assembly for a file
+src/profiler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/profiler.cpp.s
+.PHONY : src/profiler.cpp.s
+
+src/tests.obj: src/tests.cpp.obj
+
+.PHONY : src/tests.obj
+
+# target to build an object file
+src/tests.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/tests.cpp.obj
+.PHONY : src/tests.cpp.obj
+
+src/tests.i: src/tests.cpp.i
+
+.PHONY : src/tests.i
+
+# target to preprocess a source file
+src/tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/tests.cpp.i
+.PHONY : src/tests.cpp.i
+
+src/tests.s: src/tests.cpp.s
+
+.PHONY : src/tests.s
+
+# target to generate assembly for a file
+src/tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/tests.cpp.s
+.PHONY : src/tests.cpp.s
+
+src/trie.obj: src/trie.cpp.obj
+
+.PHONY : src/trie.obj
+
+# target to build an object file
+src/trie.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/trie.cpp.obj
+.PHONY : src/trie.cpp.obj
+
+src/trie.i: src/trie.cpp.i
+
+.PHONY : src/trie.i
+
+# target to preprocess a source file
+src/trie.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/trie.cpp.i
+.PHONY : src/trie.cpp.i
+
+src/trie.s: src/trie.cpp.s
+
+.PHONY : src/trie.s
+
+# target to generate assembly for a file
+src/trie.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/trie.cpp.s
+.PHONY : src/trie.cpp.s
 
 # Help Target
 help:
@@ -392,21 +473,30 @@ help:
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
-	@echo ... fileReader.obj
-	@echo ... fileReader.i
-	@echo ... fileReader.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
-	@echo ... node.obj
-	@echo ... node.i
-	@echo ... node.s
-	@echo ... permutation.obj
-	@echo ... permutation.i
-	@echo ... permutation.s
-	@echo ... trie.obj
-	@echo ... trie.i
-	@echo ... trie.s
+	@echo ... src/fileReader.obj
+	@echo ... src/fileReader.i
+	@echo ... src/fileReader.s
+	@echo ... src/hashCheck.obj
+	@echo ... src/hashCheck.i
+	@echo ... src/hashCheck.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
+	@echo ... src/node.obj
+	@echo ... src/node.i
+	@echo ... src/node.s
+	@echo ... src/permutation.obj
+	@echo ... src/permutation.i
+	@echo ... src/permutation.s
+	@echo ... src/profiler.obj
+	@echo ... src/profiler.i
+	@echo ... src/profiler.s
+	@echo ... src/tests.obj
+	@echo ... src/tests.i
+	@echo ... src/tests.s
+	@echo ... src/trie.obj
+	@echo ... src/trie.i
+	@echo ... src/trie.s
 .PHONY : help
 
 

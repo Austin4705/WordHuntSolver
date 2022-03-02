@@ -5,14 +5,16 @@
 #include <vector>
 #include <memory>
 #include <iostream>
-#include <ctype.h>
+#include <cctype>
 #include <sstream>
 #include <fstream>
 #include <filesystem>
 #include <chrono>
-#include <stdio.h>
+#include <cstdio>
 #include <utility>
 using std::string;
+
+#include "profiler.h"
 
 #ifndef CLAPSEAN_FILEREADER_H
 #define CLAPSEAN_FILEREADER_H

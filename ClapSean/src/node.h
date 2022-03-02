@@ -12,7 +12,7 @@
 #include <chrono>
 #include "trie.h"
 using std::string;
-
+#include "profiler.h"
 
 #ifndef CLAPSEAN_NODE_H
 #define CLAPSEAN_NODE_H
@@ -20,7 +20,6 @@ using std::string;
 //wow!! a node; so cool
 class node {
 public:
-
     //constructors
     node() = default;
     explicit node(char _letter, int _id) {
@@ -37,7 +36,6 @@ public:
     static bool inTrie(std::shared_ptr<trie> t, const string& s);
     //helper functions
 private:
-
     static std::array<node *, 16> generateGraph(const string& s);
     static void permutations(const std::shared_ptr<std::vector<string>>& returnVal, const string& prev, node* thisN, std::array<bool, 16> graph, std::shared_ptr<trie> t);
 };

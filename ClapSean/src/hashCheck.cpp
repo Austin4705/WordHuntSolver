@@ -1,9 +1,14 @@
 //
-// Created by wu_pe on 11/16/2021.
+// Created by wu_pe on 1/20/2022.
 //
-#include "trie.h"
 
-std::shared_ptr<trie> trie::makeTrie(const std::vector<std::string> & v){
+#include "hashCheck.h"
+
+
+
+
+
+std::shared_ptr<trie> hashCheck::makeTrie(const std::vector<std::string> & v){
     std::cout << "Staring Trie Building from Vector\n";
     auto t1 = std::chrono::high_resolution_clock::now();
 

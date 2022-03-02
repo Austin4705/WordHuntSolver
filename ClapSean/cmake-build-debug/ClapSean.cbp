@@ -328,31 +328,49 @@
 		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/_deps/googletest-src/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/fileReader.cpp">
+		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/src/fileReader.cpp">
 			<Option target="ClapSean"/>
 		</Unit>
-		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/fileReader.h">
+		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/src/fileReader.h">
 			<Option target="ClapSean"/>
 		</Unit>
-		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/main.cpp">
+		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/src/hashCheck.cpp">
 			<Option target="ClapSean"/>
 		</Unit>
-		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/node.cpp">
+		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/src/hashCheck.h">
 			<Option target="ClapSean"/>
 		</Unit>
-		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/node.h">
+		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/src/main.cpp">
 			<Option target="ClapSean"/>
 		</Unit>
-		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/permutation.cpp">
+		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/src/node.cpp">
 			<Option target="ClapSean"/>
 		</Unit>
-		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/permutation.h">
+		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/src/node.h">
 			<Option target="ClapSean"/>
 		</Unit>
-		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/trie.cpp">
+		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/src/permutation.cpp">
 			<Option target="ClapSean"/>
 		</Unit>
-		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/trie.h">
+		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/src/permutation.h">
+			<Option target="ClapSean"/>
+		</Unit>
+		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/src/profiler.cpp">
+			<Option target="ClapSean"/>
+		</Unit>
+		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/src/profiler.h">
+			<Option target="ClapSean"/>
+		</Unit>
+		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/src/tests.cpp">
+			<Option target="ClapSean"/>
+		</Unit>
+		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/src/tests.h">
+			<Option target="ClapSean"/>
+		</Unit>
+		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/src/trie.cpp">
+			<Option target="ClapSean"/>
+		</Unit>
+		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/src/trie.h">
 			<Option target="ClapSean"/>
 		</Unit>
 		<Unit filename="C:/Dev/WordHuntSolver/ClapSean/CMakeLists.txt">

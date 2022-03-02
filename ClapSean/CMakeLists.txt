@@ -14,7 +14,7 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
-add_executable(ClapSean main.cpp permutation.cpp permutation.h fileReader.cpp fileReader.h trie.cpp trie.h node.cpp node.h)
+add_executable(ClapSean src/main.cpp src/permutation.cpp src/permutation.h src/fileReader.cpp src/fileReader.h src/trie.cpp src/trie.h src/node.cpp src/node.h src/hashCheck.cpp src/hashCheck.h src/tests.cpp src/tests.h src/profiler.cpp src/profiler.h)
 
 target_link_libraries(ClapSean gtest_main)
 add_test(NAME example_test COMMAND ClapSean)

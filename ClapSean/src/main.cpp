@@ -9,6 +9,7 @@
 #include "fileReader.h"
 #include "node.h"
 #include "permutation.h"
+#include <numeric>
 
 #include <gtest/gtest.h>
 //lol u thought i would use these thingys
@@ -22,7 +23,6 @@ int main() {
     //importing words
     string filename = R"(lotawords.txt)";
     auto v = fileReader::readFile(filename);
-
     std::cout << "Data intake complete. Generating Trie Structure\n";
 
     //convert array into trie
@@ -40,7 +40,7 @@ int main() {
     auto x = node::totalPermutations(userI, trieTree);
     auto xx = permutation::search(x, trieTree);
     std::sort(xx->begin(),xx->end(),
-    [](string& s1, string& s2){
+    [](const string& s1, const string& s2){
             if(s1.size() == s2.size())
                 return s1 < s2;
             return ( s1.size() < s2.size() );

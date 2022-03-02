@@ -21,8 +21,8 @@ std::unique_ptr<std::vector<string>> fileReader::readFile(const string& filename
     std::cout << "Init FileStream ... ";
     std::ifstream tin(p);
     std::cout << "Filestream Made, initializing copying data\n";
-    auto t1 = std::chrono::high_resolution_clock::now();
     std::unique_ptr<std::vector<string>> v(new std::vector<string>());
+    profiler P = profiler(); P.start();
     string s;
     while(std::getline(tin, s)){
         //make lowercase
@@ -30,9 +30,7 @@ std::unique_ptr<std::vector<string>> fileReader::readFile(const string& filename
                        [](unsigned char c){ return std::tolower(c); });
         v->push_back(s);
     }
-    auto t2 = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double, std::milli> diff = t2-t1;
-    std::cout << "Read Words: " << v->size() << " in " << diff.count() << " ms.\n";
+    P.stop(); P.dump();
     return v;
 }
 

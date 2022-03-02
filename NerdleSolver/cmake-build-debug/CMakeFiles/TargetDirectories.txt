@@ -1,0 +1,3 @@
+C:/Dev/WordHuntSolver/NerdleSolver/cmake-build-debug/CMakeFiles/NerdleSolver.dir
+C:/Dev/WordHuntSolver/NerdleSolver/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Dev/WordHuntSolver/NerdleSolver/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -65,16 +65,12 @@ void node::permutations(const std::shared_ptr<std::vector<string>>& returnVal, c
 
 //get all the permutations and add it to the list
 std::shared_ptr<std::vector<string>> node::totalPermutations(const string& c, const std::shared_ptr<trie>& t){
-    std::cout << "Generating Graph\n";
-    auto t11 = std::chrono::high_resolution_clock::now();
-    //generate initial graph
-    std::array<node*, 16> graph = generateGraph(c);
 
-    auto t21 = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double, std::milli> diff1 = t21-t11;
-    std::cout << "Graph Finished Building in: " << diff1.count() << " ms\n";
-    std::cout << "Generating Permutations\n";
-    auto t12 = std::chrono::high_resolution_clock::now();
+    //generate initial graph
+    profiler P = profiler(); P.start();
+    std::array<node*, 16> graph = generateGraph(c);
+    P.stop( "Generating Permutations"); P.dump();
+    profiler P2 = profiler(); P2.start();
 
     auto returnVal = std::make_shared<std::vector<string>>();
     //for each starting node
@@ -82,10 +78,7 @@ std::shared_ptr<std::vector<string>> node::totalPermutations(const string& c, co
         //find all the permutations with that starting node nad length
         permutations(returnVal, string(1, c[i]), graph[i], std::array<bool, 16>() = {false}, t);
     }
-    auto t22 = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double, std::milli> diff2 = t22-t12;
-    std::cout << "All Permutations Finished Building in: " << diff2.count() << " ms\n";
-
+    P2.stop("All Permutations Finished Building in:"); P2.dump();
     return returnVal;
 }
 

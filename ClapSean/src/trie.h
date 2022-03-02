@@ -8,6 +8,7 @@
 #include <chrono>
 #include <iostream>
 using std::string;
+#include "profiler.h"
 
 #ifndef CLAPSEAN_TRIE_H
 #define CLAPSEAN_TRIE_H
