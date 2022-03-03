@@ -142,6 +142,33 @@ NerdleSolver/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\NerdleSolver.dir\build.make CMakeFiles/NerdleSolver.dir/build
 .PHONY : NerdleSolver/fast
 
+expressionEvaluation.obj: expressionEvaluation.cpp.obj
+
+.PHONY : expressionEvaluation.obj
+
+# target to build an object file
+expressionEvaluation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NerdleSolver.dir\build.make CMakeFiles/NerdleSolver.dir/expressionEvaluation.cpp.obj
+.PHONY : expressionEvaluation.cpp.obj
+
+expressionEvaluation.i: expressionEvaluation.cpp.i
+
+.PHONY : expressionEvaluation.i
+
+# target to preprocess a source file
+expressionEvaluation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NerdleSolver.dir\build.make CMakeFiles/NerdleSolver.dir/expressionEvaluation.cpp.i
+.PHONY : expressionEvaluation.cpp.i
+
+expressionEvaluation.s: expressionEvaluation.cpp.s
+
+.PHONY : expressionEvaluation.s
+
+# target to generate assembly for a file
+expressionEvaluation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NerdleSolver.dir\build.make CMakeFiles/NerdleSolver.dir/expressionEvaluation.cpp.s
+.PHONY : expressionEvaluation.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -169,6 +196,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\NerdleSolver.dir\build.make CMakeFiles/NerdleSolver.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+permutationGeneration.obj: permutationGeneration.cpp.obj
+
+.PHONY : permutationGeneration.obj
+
+# target to build an object file
+permutationGeneration.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NerdleSolver.dir\build.make CMakeFiles/NerdleSolver.dir/permutationGeneration.cpp.obj
+.PHONY : permutationGeneration.cpp.obj
+
+permutationGeneration.i: permutationGeneration.cpp.i
+
+.PHONY : permutationGeneration.i
+
+# target to preprocess a source file
+permutationGeneration.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NerdleSolver.dir\build.make CMakeFiles/NerdleSolver.dir/permutationGeneration.cpp.i
+.PHONY : permutationGeneration.cpp.i
+
+permutationGeneration.s: permutationGeneration.cpp.s
+
+.PHONY : permutationGeneration.s
+
+# target to generate assembly for a file
+permutationGeneration.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NerdleSolver.dir\build.make CMakeFiles/NerdleSolver.dir/permutationGeneration.cpp.s
+.PHONY : permutationGeneration.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -178,9 +232,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... NerdleSolver
+	@echo ... expressionEvaluation.obj
+	@echo ... expressionEvaluation.i
+	@echo ... expressionEvaluation.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... permutationGeneration.obj
+	@echo ... permutationGeneration.i
+	@echo ... permutationGeneration.s
 .PHONY : help
 
 

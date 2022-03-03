@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Dev/WordHuntSolver/NerdleSolver/expressionEvaluation.cpp" "C:/Dev/WordHuntSolver/NerdleSolver/cmake-build-debug/CMakeFiles/NerdleSolver.dir/expressionEvaluation.cpp.obj"
   "C:/Dev/WordHuntSolver/NerdleSolver/main.cpp" "C:/Dev/WordHuntSolver/NerdleSolver/cmake-build-debug/CMakeFiles/NerdleSolver.dir/main.cpp.obj"
+  "C:/Dev/WordHuntSolver/NerdleSolver/permutationGeneration.cpp" "C:/Dev/WordHuntSolver/NerdleSolver/cmake-build-debug/CMakeFiles/NerdleSolver.dir/permutationGeneration.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

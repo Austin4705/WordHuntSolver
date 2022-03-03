@@ -80,7 +80,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Dev/WordHuntSolver/NerdleSolver/expressionEvaluation.cpp">
+			<Option target="NerdleSolver"/>
+		</Unit>
+		<Unit filename="C:/Dev/WordHuntSolver/NerdleSolver/expressionEvaluation.h">
+			<Option target="NerdleSolver"/>
+		</Unit>
 		<Unit filename="C:/Dev/WordHuntSolver/NerdleSolver/main.cpp">
+			<Option target="NerdleSolver"/>
+		</Unit>
+		<Unit filename="C:/Dev/WordHuntSolver/NerdleSolver/permutationGeneration.cpp">
+			<Option target="NerdleSolver"/>
+		</Unit>
+		<Unit filename="C:/Dev/WordHuntSolver/NerdleSolver/permutationGeneration.h">
 			<Option target="NerdleSolver"/>
 		</Unit>
 		<Unit filename="C:/Dev/WordHuntSolver/NerdleSolver/CMakeLists.txt">

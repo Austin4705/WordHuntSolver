@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/NerdleSolver.dir/expressionEvaluation.cpp.obj"
   "CMakeFiles/NerdleSolver.dir/main.cpp.obj"
+  "CMakeFiles/NerdleSolver.dir/permutationGeneration.cpp.obj"
   "NerdleSolver.exe"
   "NerdleSolver.exe.manifest"
   "NerdleSolver.pdb"
