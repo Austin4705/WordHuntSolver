@@ -67,13 +67,37 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Dev\USACO\Practice\General\ClapSean
+CMAKE_SOURCE_DIR = C:\Dev\WordHuntSolver\ClapSean
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Dev\USACO\Practice\General\ClapSean\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	"C:\Program Files\JetBrains\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	"C:\Program Files\JetBrains\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	"C:\Program Files\JetBrains\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	"C:\Program Files\JetBrains\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -97,11 +121,33 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	"C:\Program Files\JetBrains\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	"C:\Program Files\JetBrains\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dev\USACO\Practice\General\ClapSean\cmake-build-debug\CMakeFiles C:\Dev\USACO\Practice\General\ClapSean\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug\CMakeFiles C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dev\USACO\Practice\General\ClapSean\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dev\WordHuntSolver\ClapSean\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,86 +188,273 @@ ClapSean/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/build
 .PHONY : ClapSean/fast
 
-fileReader.obj: fileReader.cpp.obj
+#=============================================================================
+# Target rules for targets named gmock_main
 
-.PHONY : fileReader.obj
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_main
+.PHONY : gmock_main
 
-# target to build an object file
-fileReader.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/fileReader.cpp.obj
-.PHONY : fileReader.cpp.obj
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
 
-fileReader.i: fileReader.cpp.i
+#=============================================================================
+# Target rules for targets named gmock
 
-.PHONY : fileReader.i
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock
+.PHONY : gmock
 
-# target to preprocess a source file
-fileReader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/fileReader.cpp.i
-.PHONY : fileReader.cpp.i
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
 
-fileReader.s: fileReader.cpp.s
+#=============================================================================
+# Target rules for targets named gtest
 
-.PHONY : fileReader.s
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest
+.PHONY : gtest
 
-# target to generate assembly for a file
-fileReader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/fileReader.cpp.s
-.PHONY : fileReader.cpp.s
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
 
-main.obj: main.cpp.obj
+#=============================================================================
+# Target rules for targets named gtest_main
 
-.PHONY : main.obj
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest_main
+.PHONY : gtest_main
 
-# target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
 
-main.i: main.cpp.i
+src/fileReader.obj: src/fileReader.cpp.obj
 
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-permutation.obj: permutation.cpp.obj
-
-.PHONY : permutation.obj
+.PHONY : src/fileReader.obj
 
 # target to build an object file
-permutation.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/permutation.cpp.obj
-.PHONY : permutation.cpp.obj
+src/fileReader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/fileReader.cpp.obj
+.PHONY : src/fileReader.cpp.obj
 
-permutation.i: permutation.cpp.i
+src/fileReader.i: src/fileReader.cpp.i
 
-.PHONY : permutation.i
+.PHONY : src/fileReader.i
 
 # target to preprocess a source file
-permutation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/permutation.cpp.i
-.PHONY : permutation.cpp.i
+src/fileReader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/fileReader.cpp.i
+.PHONY : src/fileReader.cpp.i
 
-permutation.s: permutation.cpp.s
+src/fileReader.s: src/fileReader.cpp.s
 
-.PHONY : permutation.s
+.PHONY : src/fileReader.s
 
 # target to generate assembly for a file
-permutation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/permutation.cpp.s
-.PHONY : permutation.cpp.s
+src/fileReader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/fileReader.cpp.s
+.PHONY : src/fileReader.cpp.s
+
+src/hashCheck.obj: src/hashCheck.cpp.obj
+
+.PHONY : src/hashCheck.obj
+
+# target to build an object file
+src/hashCheck.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/hashCheck.cpp.obj
+.PHONY : src/hashCheck.cpp.obj
+
+src/hashCheck.i: src/hashCheck.cpp.i
+
+.PHONY : src/hashCheck.i
+
+# target to preprocess a source file
+src/hashCheck.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/hashCheck.cpp.i
+.PHONY : src/hashCheck.cpp.i
+
+src/hashCheck.s: src/hashCheck.cpp.s
+
+.PHONY : src/hashCheck.s
+
+# target to generate assembly for a file
+src/hashCheck.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/hashCheck.cpp.s
+.PHONY : src/hashCheck.cpp.s
+
+src/main.obj: src/main.cpp.obj
+
+.PHONY : src/main.obj
+
+# target to build an object file
+src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/node.obj: src/node.cpp.obj
+
+.PHONY : src/node.obj
+
+# target to build an object file
+src/node.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/node.cpp.obj
+.PHONY : src/node.cpp.obj
+
+src/node.i: src/node.cpp.i
+
+.PHONY : src/node.i
+
+# target to preprocess a source file
+src/node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/node.cpp.i
+.PHONY : src/node.cpp.i
+
+src/node.s: src/node.cpp.s
+
+.PHONY : src/node.s
+
+# target to generate assembly for a file
+src/node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/node.cpp.s
+.PHONY : src/node.cpp.s
+
+src/permutation.obj: src/permutation.cpp.obj
+
+.PHONY : src/permutation.obj
+
+# target to build an object file
+src/permutation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/permutation.cpp.obj
+.PHONY : src/permutation.cpp.obj
+
+src/permutation.i: src/permutation.cpp.i
+
+.PHONY : src/permutation.i
+
+# target to preprocess a source file
+src/permutation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/permutation.cpp.i
+.PHONY : src/permutation.cpp.i
+
+src/permutation.s: src/permutation.cpp.s
+
+.PHONY : src/permutation.s
+
+# target to generate assembly for a file
+src/permutation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/permutation.cpp.s
+.PHONY : src/permutation.cpp.s
+
+src/profiler.obj: src/profiler.cpp.obj
+
+.PHONY : src/profiler.obj
+
+# target to build an object file
+src/profiler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/profiler.cpp.obj
+.PHONY : src/profiler.cpp.obj
+
+src/profiler.i: src/profiler.cpp.i
+
+.PHONY : src/profiler.i
+
+# target to preprocess a source file
+src/profiler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/profiler.cpp.i
+.PHONY : src/profiler.cpp.i
+
+src/profiler.s: src/profiler.cpp.s
+
+.PHONY : src/profiler.s
+
+# target to generate assembly for a file
+src/profiler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/profiler.cpp.s
+.PHONY : src/profiler.cpp.s
+
+src/tests.obj: src/tests.cpp.obj
+
+.PHONY : src/tests.obj
+
+# target to build an object file
+src/tests.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/tests.cpp.obj
+.PHONY : src/tests.cpp.obj
+
+src/tests.i: src/tests.cpp.i
+
+.PHONY : src/tests.i
+
+# target to preprocess a source file
+src/tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/tests.cpp.i
+.PHONY : src/tests.cpp.i
+
+src/tests.s: src/tests.cpp.s
+
+.PHONY : src/tests.s
+
+# target to generate assembly for a file
+src/tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/tests.cpp.s
+.PHONY : src/tests.cpp.s
+
+src/trie.obj: src/trie.cpp.obj
+
+.PHONY : src/trie.obj
+
+# target to build an object file
+src/trie.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/trie.cpp.obj
+.PHONY : src/trie.cpp.obj
+
+src/trie.i: src/trie.cpp.i
+
+.PHONY : src/trie.i
+
+# target to preprocess a source file
+src/trie.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/trie.cpp.i
+.PHONY : src/trie.cpp.i
+
+src/trie.s: src/trie.cpp.s
+
+.PHONY : src/trie.s
+
+# target to generate assembly for a file
+src/trie.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ClapSean.dir\build.make CMakeFiles/ClapSean.dir/src/trie.cpp.s
+.PHONY : src/trie.cpp.s
 
 # Help Target
 help:
@@ -230,17 +463,40 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... install/strip
+	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... ClapSean
-	@echo ... fileReader.obj
-	@echo ... fileReader.i
-	@echo ... fileReader.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
-	@echo ... permutation.obj
-	@echo ... permutation.i
-	@echo ... permutation.s
+	@echo ... gmock
+	@echo ... gmock_main
+	@echo ... gtest
+	@echo ... gtest_main
+	@echo ... src/fileReader.obj
+	@echo ... src/fileReader.i
+	@echo ... src/fileReader.s
+	@echo ... src/hashCheck.obj
+	@echo ... src/hashCheck.i
+	@echo ... src/hashCheck.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
+	@echo ... src/node.obj
+	@echo ... src/node.i
+	@echo ... src/node.s
+	@echo ... src/permutation.obj
+	@echo ... src/permutation.i
+	@echo ... src/permutation.s
+	@echo ... src/profiler.obj
+	@echo ... src/profiler.i
+	@echo ... src/profiler.s
+	@echo ... src/tests.obj
+	@echo ... src/tests.i
+	@echo ... src/tests.s
+	@echo ... src/trie.obj
+	@echo ... src/trie.i
+	@echo ... src/trie.s
 .PHONY : help
 
 
