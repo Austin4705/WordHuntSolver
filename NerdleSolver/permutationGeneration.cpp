@@ -3,11 +3,10 @@
 //
 
 #include "permutationGeneration.h"
-
-
-
 template <class T, int len>
-static constexpr permutationGeneration::std::vector<arrT> * generateAllPermutations(const std::vector<T> & inputPerm){
+constexpr std::vector<std::array<T, len>>
+permutationGeneration::generateAllPermutations(const std::vector<T> & inputPerm){
+    typedef std::array<T, len> arrT;
     struct arrayContainer{
         arrT a{};
         int sz = 0;
@@ -20,8 +19,7 @@ static constexpr permutationGeneration::std::vector<arrT> * generateAllPermutati
     std::for_each(inputPerm.begin(), inputPerm.end(), [&stack](const T& x){
         stack->template emplace(x);
     });
-    //auto permRetArr = new std::vector<arrT>(); //return permutation array
-    auto permRetArr = new std::vector<arrT>;
+    auto permRetArr = new std::vector<arrT>; //return permutation array
     while(!stack->empty()){
         arrayContainer at = stack->top(); stack->pop();
         //code is repeated, but this saves one exponentaion of stuff on on the stack instead of inputting later
@@ -33,12 +31,17 @@ static constexpr permutationGeneration::std::vector<arrT> * generateAllPermutati
     return permRetArr;
 }
 
+
 //given a check function and a list of vectors, return the vectors that work
-template <class T, int len>
-static constexpr permutationGeneration::std::vector<arrT> validPermutations(std::vector<arrT> inputPerm, const std::function<bool(const std::array<T, len>&)> & f){
+template<class T, int len>
+constexpr std::vector<std::array<T, len>>
+permutationGeneration::validPermutations(const std::vector<std::array<T, len>> & inputPerm, const std::function<bool(std::array<T, len> &)> & f) {
+    typedef std::array<T, len> arrT;
     std::vector<T> retVec;
     std::for_each(inputPerm.begin(), inputPerm.end(),[&retVec, &f](T chk){
         if(f(chk)) retVec.push_back();
     });
     return retVec;
 }
+
+

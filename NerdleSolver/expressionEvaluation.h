@@ -11,13 +11,12 @@
 #include <array>
 #include <functional>
 #include <utility>
+#include <string>
+using std::string;
 
-template <class T, int len>
-class expressionEvaluation {
-    typedef std::array<T, len> arrT;
-    expressionEvaluation(arrT x){
-
-    }
+namespace expressionEvaluation {
+    template <class T, int len>
+    constexpr bool checkStrNumExp(const std::array<T, len>& eval);
 };
 
 

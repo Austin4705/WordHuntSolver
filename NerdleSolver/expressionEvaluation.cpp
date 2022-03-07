@@ -5,7 +5,8 @@
 #include "expressionEvaluation.h"
 
 template <class T, int len>
-static constexpr bool checkStrNumExp(const arrT& eval){
+constexpr bool expressionEvaluation::checkStrNumExp(std::array<T, len>& eval){
+    typedef std::array<T, len> arrT;
     //find the equal sign and split string, could use std::find but custom seems to be faster
     //guaranteed that a and b both have no = sign, just values and operators
     arrT a, b;

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.17)
 project(NerdleSolver)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 20)
 
-add_executable(NerdleSolver main.cpp permutationGeneration.cpp expressionEvaluation.cpp)
+add_executable(NerdleSolver main.cpp permu`tationGeneration.cpp expressionEvaluation.cpp)

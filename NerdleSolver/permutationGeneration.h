@@ -11,16 +11,21 @@
 #include <functional>
 #include <utility>
 
-class permutationGeneration {
-    typedef std::array<T, len> arrT;
-    static constexpr permutationGeneration::std::vector<arrT> validPermutations(std::vector<arrT> inputPerm, const std::function<bool(const arrT&)> & f);
-    static constexpr permutationGeneration::std::vector<arrT> * generateAllPermutations(const std::vector<T> & inputPerm);
-
-public:
-    static constexpr std::vector<arrT> totalPermutation(const std::vector<T> & inputPerm, const std::function<bool(const arrT&)> & f){
-        auto x = generateAllPermutations(inputPerm);
-        auto y =
+namespace permutationGeneration {
+    template <class T, int len>
+    constexpr std::vector<std::array<T, len>>
+    totalPermutation(const std::vector<T> & inputPerm, const std::function<bool(std::array<T, len> &)> & f){
+        std::function<std::vector<std::array<T, len>>(const std::vector<T> &)> z = generateAllPermutations<T, len>;
+        return validPermutations<T, len>(z, f);
     }
+
+    template <class T, int len>
+    constexpr std::vector<std::array<T, len>>
+    validPermutations(const std::vector<std::array<T, len>> & inputPerm, const std::function<bool(std::array<T, len> &)> &f);
+
+    template <class T, int len>
+    constexpr std::vector<std::array<T, len>>
+    generateAllPermutations(const std::vector<T> & inputPerm);
 
 };
 
