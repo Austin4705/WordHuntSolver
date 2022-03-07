@@ -1,4 +1,1 @@
-"C:\Program Files\JetBrains\CLion 2020.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=C:/msys64/mingw64/bin/clang.exe -DCMAKE_CXX_COMPILER=C:/msys64/mingw64/bin/clang++.exe -G "CodeBlocks - MinGW Makefiles" C:\Dev\WordHuntSolver\ClapSean
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug
+CMakeLists.txt not found in C:\Dev\WordHuntSolver\ClapSean Select CMakeLists.txt

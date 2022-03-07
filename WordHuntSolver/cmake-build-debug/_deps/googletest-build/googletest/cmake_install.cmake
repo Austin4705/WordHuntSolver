@@ -1,4 +1,4 @@
-# Install script for directory: C:/Dev/WordHuntSolver/ClapSean/cmake-build-debug/_deps/googletest-src/googletest
+# Install script for directory: C:/Dev/WordHuntSolver/WordHuntSolver/cmake-build-debug/_deps/googletest-src/googletest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
