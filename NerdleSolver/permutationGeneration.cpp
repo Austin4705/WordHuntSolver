@@ -3,6 +3,7 @@
 //
 
 #include "permutationGeneration.h"
+
 template <class T, int len>
 constexpr std::vector<std::array<T, len>>
 permutationGeneration::generateAllPermutations(const std::vector<T> & inputPerm){
@@ -15,19 +16,28 @@ permutationGeneration::generateAllPermutations(const std::vector<T> & inputPerm)
         explicit arrayContainer(T x){ a.at(sz) = x; }
         explicit operator arrT() const { return a; }
     };
+    if(len == 1){
+        std::vector<std::array<T, len>> V(inputPerm.size(), std::array<T, len>());
+        for(int i = 0; i < inputPerm.size(); i++)
+            V[i][0] = inputPerm[i];
+        return V;
+    }
+
     auto stack = new std::stack<arrayContainer>; //better not stack overflow :), (stack based recursion)
     std::for_each(inputPerm.begin(), inputPerm.end(), [&stack](const T& x){
         stack->template emplace(x);
     });
-    auto permRetArr = new std::vector<arrT>; //return permutation array
+    auto permRetArr = std::vector<arrT>(); //return permutation array
     while(!stack->empty()){
         arrayContainer at = stack->top(); stack->pop();
         //code is repeated, but this saves one exponentaion of stuff on on the stack instead of inputting later
         if(at.sz == len-2) for(auto &x : inputPerm)
-                permRetArr->push_back(arrayContainer(at, x).a);
+                permRetArr.push_back(arrayContainer(at, x).a);
         else for(auto &x : inputPerm)
                 stack->emplace(arrayContainer(at, x));
     }
+
+
     return permRetArr;
 }
 

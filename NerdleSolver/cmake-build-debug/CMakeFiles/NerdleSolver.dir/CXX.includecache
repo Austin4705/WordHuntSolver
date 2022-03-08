@@ -6,22 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Dev/WordHuntSolver/NerdleSolver/expressionEvaluation.h
-vector
--
-stack
--
-algorithm
--
-array
--
-functional
--
-utility
--
-string
--
-
 C:/Dev/WordHuntSolver/NerdleSolver/main.cpp
 iostream
 -
@@ -39,10 +23,12 @@ functional
 -
 utility
 -
+permutationGeneration.cpp
+C:/Dev/WordHuntSolver/NerdleSolver/permutationGeneration.cpp
+
+C:/Dev/WordHuntSolver/NerdleSolver/permutationGeneration.cpp
 permutationGeneration.h
 C:/Dev/WordHuntSolver/NerdleSolver/permutationGeneration.h
-expressionEvaluation.h
-C:/Dev/WordHuntSolver/NerdleSolver/expressionEvaluation.h
 
 C:/Dev/WordHuntSolver/NerdleSolver/permutationGeneration.h
 vector

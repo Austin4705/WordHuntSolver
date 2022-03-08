@@ -142,33 +142,6 @@ NerdleSolver/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\NerdleSolver.dir\build.make CMakeFiles/NerdleSolver.dir/build
 .PHONY : NerdleSolver/fast
 
-expressionEvaluation.obj: expressionEvaluation.cpp.obj
-
-.PHONY : expressionEvaluation.obj
-
-# target to build an object file
-expressionEvaluation.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NerdleSolver.dir\build.make CMakeFiles/NerdleSolver.dir/expressionEvaluation.cpp.obj
-.PHONY : expressionEvaluation.cpp.obj
-
-expressionEvaluation.i: expressionEvaluation.cpp.i
-
-.PHONY : expressionEvaluation.i
-
-# target to preprocess a source file
-expressionEvaluation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NerdleSolver.dir\build.make CMakeFiles/NerdleSolver.dir/expressionEvaluation.cpp.i
-.PHONY : expressionEvaluation.cpp.i
-
-expressionEvaluation.s: expressionEvaluation.cpp.s
-
-.PHONY : expressionEvaluation.s
-
-# target to generate assembly for a file
-expressionEvaluation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\NerdleSolver.dir\build.make CMakeFiles/NerdleSolver.dir/expressionEvaluation.cpp.s
-.PHONY : expressionEvaluation.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -232,9 +205,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... NerdleSolver
-	@echo ... expressionEvaluation.obj
-	@echo ... expressionEvaluation.i
-	@echo ... expressionEvaluation.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

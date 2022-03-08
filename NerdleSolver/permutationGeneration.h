@@ -25,7 +25,7 @@ namespace permutationGeneration {
     template <class T, int len>
     constexpr std::vector<std::array<T, len>>
     validPermutations(const std::vector<std::array<T, len>> & inputPerm, const std::function<bool(std::array<T, len> &)> &f);
-
+    
     //generates all permutations
     template <class T, int len>
     constexpr std::vector<std::array<T, len>>
