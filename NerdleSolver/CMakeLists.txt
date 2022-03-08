@@ -3,4 +3,4 @@ project(NerdleSolver)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(NerdleSolver main.cpp permu`tationGeneration.cpp expressionEvaluation.cpp)
+add_executable(NerdleSolver main.cpp permutationGeneration.cpp permutationGeneration.h expressionEvaluation.cpp expressionEvaluation.h)
